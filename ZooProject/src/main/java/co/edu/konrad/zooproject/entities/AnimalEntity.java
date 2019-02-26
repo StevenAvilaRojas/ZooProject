@@ -34,51 +34,51 @@ public class AnimalEntity  implements Serializable{
     //Descripcion
     @Column
     private String descripcion;
-    //Constructor getters and setters
+
     public AnimalEntity() {
-       }
+    }
 
-       public Long getIdAnimal() {
-           return idAnimal;
-       }
+    public Long getIdAnimal() {
+        return idAnimal;
+    }
 
-       public void setIdAnimal(Long idAnimal) {
-           this.idAnimal = idAnimal;
-       }
+    public void setIdAnimal(Long idAnimal) {
+        this.idAnimal = idAnimal;
+    }
 
-       public String getNombreAnimal() {
-           return nombreAnimal;
-       }
+    public String getNombreAnimal() {
+        return nombreAnimal;
+    }
 
-       public void setNombreAnimal(String nombreAnimal) {
-           this.nombreAnimal = nombreAnimal;
-       }
+    public void setNombreAnimal(String nombreAnimal) {
+        this.nombreAnimal = nombreAnimal;
+    }
 
-       public String getNombreCientifico() {
-           return nombreCientifico;
-       }
+    public String getNombreCientifico() {
+        return nombreCientifico;
+    }
 
-       public void setNombreCientifico(String nombreCientifico) {
-           this.nombreCientifico = nombreCientifico;
-       }
+    public void setNombreCientifico(String nombreCientifico) {
+        this.nombreCientifico = nombreCientifico;
+    }
 
-       public String getEspecie() {
-           return especie;
-       }
+    public String getEspecie() {
+        return especie;
+    }
 
-       public void setEspecie(String especie) {
-           this.especie = especie;
-       }
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
 
-       public String getDescripcion() {
-           return descripcion;
-       }
+    public String getDescripcion() {
+        return descripcion;
+    }
 
-       public void setDescripcion(String descripcion) {
-           this.descripcion = descripcion;
-       }
-
-
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    
+    
 
 
 }
