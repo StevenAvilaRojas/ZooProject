@@ -6,11 +6,13 @@
 package co.edu.konrad.zooproject.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
 
 /**
  * Definicion Tabla-Alimento
@@ -31,40 +33,42 @@ public class AlimentoEntity  implements Serializable{
     //Atrr Hora_Alimento
     @Column(name ="horaAlimento")
     @Temporal(javax.persistence.TemporalType.DATE)
-    private DATE horaAlimento;
+    private Date horaAlimento;
 
-    public AnimalAlimentoEntity() {
+    public AlimentoEntity() {
        }
 
-       public Long getIdAlimento(){
-         return idAlimento;
-       }
+    public Long getIdAlimento() {
+        return idAlimento;
+    }
 
-       public void setIdAlimento(){
-         this.idAlimento = idAlimento;
-       }
+    public void setIdAlimento(Long idAlimento) {
+        this.idAlimento = idAlimento;
+    }
 
-       public Long getTipoAnimal(){
-         return tipoAnimal;
-       }
+    public Long getTipoAnimal() {
+        return tipoAnimal;
+    }
 
-       public void setTipoAnimal(){
-         this.tipoAnimal = tipoAnimal;
-       }
+    public void setTipoAnimal(Long tipoAnimal) {
+        this.tipoAnimal = tipoAnimal;
+    }
 
-       public Long getTipoAlimento(){
-         return tipoAlimento;
-       }
+    public String getTipoAlimento() {
+        return tipoAlimento;
+    }
 
-       public void setTipoAlimento(){
-         this.tipoAlimento = tipoAlimento;
-       }
+    public void setTipoAlimento(String tipoAlimento) {
+        this.tipoAlimento = tipoAlimento;
+    }
 
-       public DATE getHoraAlimento(){
-         this.horaAlimento = horaAlimento;
-       }
+    public Date getHoraAlimento() {
+        return horaAlimento;
+    }
 
-       public void setHoraAlimento(DATE horaAlimento){
-         this.horaAlimento = horaAlimento;
-       }
+    public void setHoraAlimento(Date horaAlimento) {
+        this.horaAlimento = horaAlimento;
+    }
+
+
 }

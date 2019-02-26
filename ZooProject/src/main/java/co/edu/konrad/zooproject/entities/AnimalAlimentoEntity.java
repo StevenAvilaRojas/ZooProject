@@ -32,27 +32,30 @@ public class AnimalAlimentoEntity  implements Serializable{
     public AnimalAlimentoEntity() {
        }
 
-       public Long getIdAnimalAlimento(){
-         return idAnimalAlimento;
-       }
+    public Long getIdAnimalAlimento() {
+        return idAnimalAlimento;
+    }
 
-       public void setIdAnimalAlimento(){
-         this.idAnimalAlimento = idAnimalAlimento;
-       }
+    public void setIdAnimalAlimento(Long idAnimalAlimento) {
+        this.idAnimalAlimento = idAnimalAlimento;
+    }
 
-       public Long getAnimal(){
-         return animal;
-       }
+    public Long getAnimal() {
+        return animal;
+    }
 
-       public void setAnimal(){
-         this.animal = animal;
-       }
+    public void setAnimal(Long animal) {
+        this.animal = animal;
+    }
 
-       public Long getAlimento(){
-         return alimento;
-       }
+    public Long getAlimento() {
+        return alimento;
+    }
 
-       public void setAlimento(){
-         this.alimento = alimento;
-       }
+    public void setAlimento(Long alimento) {
+        this.alimento = alimento;
+    }
+
+
+
 }
