@@ -16,12 +16,12 @@ import javax.persistence.Temporal;
 import java.util.Date;
 
 /**
- *
+ * Definicion Tabla-Show
  * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 
 @Entity
-public class ShowEntity {
+public class ShowEntity implements Serializable{
     //Llave Primaria
     @Id
     @GeneratedValue

@@ -15,7 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 
 /**
- *
+ * Definicion Tabla-Cuidador
  * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 

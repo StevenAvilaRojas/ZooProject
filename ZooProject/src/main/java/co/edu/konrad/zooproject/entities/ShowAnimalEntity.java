@@ -13,7 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *
+ * Definicion Tabla-Show-Animal
  * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
