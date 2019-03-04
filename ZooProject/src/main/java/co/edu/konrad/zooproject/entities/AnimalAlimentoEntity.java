@@ -14,7 +14,7 @@ import javax.persistence.Id;
 
 /**
  * Definicion Tabla-Animal-Alimento
- * @author Alexander Nicholls
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
 public class AnimalAlimentoEntity  implements Serializable{

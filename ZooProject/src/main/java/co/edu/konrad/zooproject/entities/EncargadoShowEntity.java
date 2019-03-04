@@ -16,7 +16,7 @@ import javax.persistence.Temporal;
 
 /**
  *  Definicion Tabla-Encargado
- * @author Alexander Nicholls
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 
 @Entity

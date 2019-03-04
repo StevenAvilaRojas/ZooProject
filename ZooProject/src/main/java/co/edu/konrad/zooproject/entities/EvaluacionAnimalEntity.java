@@ -14,7 +14,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Diego
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 
 @Entity

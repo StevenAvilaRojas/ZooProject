@@ -16,7 +16,7 @@ import javax.persistence.Temporal;
 
 /**
  * Definicion Tabla-Alimento
- * @author Alexander Nicholls
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
 public class AlimentoEntity  implements Serializable{

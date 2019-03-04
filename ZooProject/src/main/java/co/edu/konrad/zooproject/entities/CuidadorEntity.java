@@ -16,7 +16,7 @@ import javax.persistence.Temporal;
 
 /**
  *
- * @author Diego
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 
 @Entity

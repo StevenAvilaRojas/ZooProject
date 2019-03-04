@@ -17,7 +17,7 @@ import java.util.Date;
 
 /**
  *
- * @author Steven
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 
 @Entity

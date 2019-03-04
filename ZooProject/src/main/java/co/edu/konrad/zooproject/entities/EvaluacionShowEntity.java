@@ -14,7 +14,7 @@ import javax.persistence.Id;
 /**
  * Definicion Tabla EvaluacionShow
  *
- * @author Diego Cortazar
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
 public class EvaluacionShowEntity {

@@ -7,7 +7,7 @@ package co.edu.konrad.zooproject.entities;
 
 /**
  *
- * @author Ingenieria
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 public class ShowUbicacionEntity {
     
