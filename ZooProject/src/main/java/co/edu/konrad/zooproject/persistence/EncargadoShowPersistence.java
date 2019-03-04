@@ -7,7 +7,7 @@ package co.edu.konrad.zooproject.persistence;
 
 /**
  *
- * @author Alexander Nicholls
+ * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 public class EncargadoShowPersistence {
     
