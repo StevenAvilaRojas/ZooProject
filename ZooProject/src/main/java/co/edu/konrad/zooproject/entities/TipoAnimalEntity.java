@@ -13,7 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- *
+ * Definicion Tabla TipoAnimal 
  * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
@@ -22,7 +22,7 @@ public class TipoAnimalEntity implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idTipoAnimal;
-    //Carnivoro
+    //Nombre Animal
     @Column(name = "nombre_animal")
     private String nombreAnimal;
 
