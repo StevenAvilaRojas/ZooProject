@@ -18,7 +18,7 @@ import javax.persistence.Query;
  */
 @Stateless
 public class ShowPersistence {
-    @PersistenceContext(unitName="MarketplacePU")
+    @PersistenceContext(unitName="ZooProjectPU")
     protected EntityManager em;
     
     public List<ShowEntity> findAll(){

@@ -21,7 +21,7 @@ import javax.persistence.Query;
 @Stateless
 public class TipoAnimalPersistence {
 
-    @PersistenceContext(unitName = "MarketplacePU")
+    @PersistenceContext(unitName = "ZooProjectPU")
     protected EntityManager em;
 
     public List<TipoAnimalEntity> findAll() {

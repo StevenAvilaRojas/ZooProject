@@ -13,7 +13,7 @@ import javax.persistence.Query;
  */
 @Stateless
 public class AnimalAlimentoPersistence {
-    @PersistenceContext(unitName="MarketplacePU")
+    @PersistenceContext(unitName="ZooProjectPU")
     protected EntityManager em;
     
     public List<AnimalAlimentoEntity> findAll(){
