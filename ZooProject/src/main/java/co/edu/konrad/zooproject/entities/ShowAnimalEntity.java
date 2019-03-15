@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  * Definicion Tabla-Show-Animal
@@ -23,11 +25,13 @@ public class ShowAnimalEntity implements Serializable{
     @GeneratedValue
     private Long id_show_animal;
     //id_show
-    @Column(name = "id_show")
-    private Long idShow;
+    @JoinColumn
+    @ManyToOne
+    private ShowEntity idShow;
     //id_animal
-    @Column(name = "id_animal")
-    private Long idAnimal;
+    @JoinColumn
+    @ManyToOne
+    private AnimalEntity idAnimal;
 
     public ShowAnimalEntity() {
     }
@@ -40,20 +44,22 @@ public class ShowAnimalEntity implements Serializable{
         this.id_show_animal = id_show_animal;
     }
 
-    public Long getIdShow() {
+    public ShowEntity getIdShow() {
         return idShow;
     }
 
-    public void setIdShow(Long idShow) {
+    public void setIdShow(ShowEntity idShow) {
         this.idShow = idShow;
     }
 
-    public Long getIdAnimal() {
+    public AnimalEntity getIdAnimal() {
         return idAnimal;
     }
 
-    public void setIdAnimal(Long idAnimal) {
+    public void setIdAnimal(AnimalEntity idAnimal) {
         this.idAnimal = idAnimal;
     }
+
+    
 
 }
