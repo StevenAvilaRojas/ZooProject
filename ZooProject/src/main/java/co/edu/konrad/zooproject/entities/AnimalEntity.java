@@ -17,12 +17,18 @@ public class AnimalEntity  implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idAnimal;
+    //Id cuidador
+    @Column(name ="id_cuidador")
+    private Long idCuidador;
     //Nombre Animal
     @Column(name ="nombre_animal")
     private String nombreAnimal;
     //Nombre Cientifico
     @Column(name ="nom_cientifico")
     private String nombreCientifico;
+    //Id tipo animal
+    @Column(name ="id_tipo_animal")
+    private Long idTipoAnimal;
     //Especie
     @Column
     private String especie;
@@ -72,8 +78,23 @@ public class AnimalEntity  implements Serializable{
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
-    
 
+    public Long getIdCuidador() {
+        return idCuidador;
+    }
+
+    public void setIdCuidador(Long idCuidador) {
+        this.idCuidador = idCuidador;
+    }
+
+    public Long getIdTipoAnimal() {
+        return idTipoAnimal;
+    }
+
+    public void setIdTipoAnimal(Long idTipoAnimal) {
+        this.idTipoAnimal = idTipoAnimal;
+    }
+    
+    
 
 }

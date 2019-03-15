@@ -6,6 +6,7 @@
 package co.edu.konrad.zooproject.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,6 +37,11 @@ public class EvaluacionAnimalEntity implements Serializable{
     //Calificacion
     @Column
     private Long calificacion;
+
+    //Fecha evaluacion animal
+    @Column(name ="fecha_evaluacion_animal")
+    private Date fechaEvaluacionAnimal;
+
 
     //Constructor
 
@@ -76,7 +82,14 @@ public class EvaluacionAnimalEntity implements Serializable{
     public void setCalificacion(Long calificacion) {
         this.calificacion = calificacion;
     }
+    
+    
+    public Date getFechaEvaluacionAnimal() {
+        return fechaEvaluacionAnimal;
+    }
 
-
+    public void setFechaEvaluacionAnimal(Date fechaEvaluacionAnimal) {
+        this.fechaEvaluacionAnimal = fechaEvaluacionAnimal;
+    }
 
 }

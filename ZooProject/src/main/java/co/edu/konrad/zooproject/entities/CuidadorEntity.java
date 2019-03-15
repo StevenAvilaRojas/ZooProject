@@ -48,10 +48,6 @@ public class CuidadorEntity implements Serializable{
     @Column
     private Long celular;
 
-    //Id Animal
-    @Column(name = "id_animal")
-    private Long idAnimal;
-
     //Constructor
 
     public CuidadorEntity() {
@@ -107,12 +103,5 @@ public class CuidadorEntity implements Serializable{
         this.celular = celular;
     }
 
-    public Long getIdAnimal() {
-        return idAnimal;
-    }
-
-    public void setIdAnimal(Long idAnimal) {
-        this.idAnimal = idAnimal;
-    }
 
 }
