@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 /**
  * Definicion Tabla-Animal
@@ -17,9 +20,6 @@ public class AnimalEntity  implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idAnimal;
-    //Id cuidador
-    @Column(name ="id_cuidador")
-    private Long idCuidador;
     //Nombre Animal
     @Column(name ="nombre_animal")
     private String nombreAnimal;
@@ -27,8 +27,13 @@ public class AnimalEntity  implements Serializable{
     @Column(name ="nom_cientifico")
     private String nombreCientifico;
     //Id tipo animal
-    @Column(name ="id_tipo_animal")
-    private Long idTipoAnimal;
+    @JoinColumn
+    @ManyToOne
+    private TipoAnimalEntity idTipoAnimal;
+    //Id Cuidador
+    @JoinColumn
+    @OneToMany
+    private CuidadorEntity idCuidador;
     //Especie
     @Column
     private String especie;
@@ -63,6 +68,22 @@ public class AnimalEntity  implements Serializable{
         this.nombreCientifico = nombreCientifico;
     }
 
+    public TipoAnimalEntity getIdTipoAnimal() {
+        return idTipoAnimal;
+    }
+
+    public void setIdTipoAnimal(TipoAnimalEntity idTipoAnimal) {
+        this.idTipoAnimal = idTipoAnimal;
+    }
+
+    public CuidadorEntity getIdCuidador() {
+        return idCuidador;
+    }
+
+    public void setIdCuidador(CuidadorEntity idCuidador) {
+        this.idCuidador = idCuidador;
+    }
+
     public String getEspecie() {
         return especie;
     }
@@ -78,23 +99,4 @@ public class AnimalEntity  implements Serializable{
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
-    public Long getIdCuidador() {
-        return idCuidador;
-    }
-
-    public void setIdCuidador(Long idCuidador) {
-        this.idCuidador = idCuidador;
-    }
-
-    public Long getIdTipoAnimal() {
-        return idTipoAnimal;
-    }
-
-    public void setIdTipoAnimal(Long idTipoAnimal) {
-        this.idTipoAnimal = idTipoAnimal;
-    }
-    
-    
-
 }

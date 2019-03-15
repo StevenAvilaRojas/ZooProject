@@ -35,8 +35,8 @@ public class CuidadorEntity implements Serializable{
     @Column(name = "numero_id")
     private Long numeroId;
 
-    //Tipo Id
-    @Column(name = "tipo_id")
+    //Documento
+    @Column(name = "documento")
     private String tipoId;
 
     //Fecha Nacimiento

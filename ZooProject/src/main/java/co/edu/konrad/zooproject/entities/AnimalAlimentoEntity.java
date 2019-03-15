@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  * Definicion Tabla-Animal-Alimento
@@ -18,11 +20,13 @@ public class AnimalAlimentoEntity  implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idAnimalAlimento;
     //Atrr Id Animal
-    @Column(name ="animal")
-    private Long animal;
+    @JoinColumn
+    @ManyToOne
+    private AnimalEntity animal;
     //Atrr Alimento
-    @Column(name ="alimento")
-    private Long alimento;
+    @JoinColumn
+    @ManyToOne
+    private AlimentoEntity alimento;
 
     public AnimalAlimentoEntity() {
        }
@@ -35,21 +39,22 @@ public class AnimalAlimentoEntity  implements Serializable{
         this.idAnimalAlimento = idAnimalAlimento;
     }
 
-    public Long getAnimal() {
+    public AnimalEntity getAnimal() {
         return animal;
     }
 
-    public void setAnimal(Long animal) {
+    public void setAnimal(AnimalEntity animal) {
         this.animal = animal;
     }
 
-    public Long getAlimento() {
+    public AlimentoEntity getAlimento() {
         return alimento;
     }
 
-    public void setAlimento(Long alimento) {
+    public void setAlimento(AlimentoEntity alimento) {
         this.alimento = alimento;
     }
+
 
 
 

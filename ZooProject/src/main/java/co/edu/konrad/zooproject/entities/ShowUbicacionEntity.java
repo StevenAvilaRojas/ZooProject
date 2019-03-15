@@ -11,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  * Definicion Tabla ShowUbicacion 
@@ -26,12 +28,14 @@ public class ShowUbicacionEntity implements Serializable{
     
     
     //Id Show
-    @Column(name = "id_show")
-    private Long idShow; 
+    @JoinColumn
+    @ManyToOne
+    private ShowEntity idShow; 
     
     //Id Ubicaion
-    @Column(name = "id_ubicacion")
-    private Long idUbicacion;
+    @JoinColumn
+    @ManyToOne
+    private UbicacionEntity idUbicacion;
     
     //Constructor
 
@@ -48,20 +52,22 @@ public class ShowUbicacionEntity implements Serializable{
         this.id_show_ubicacion = id_show_ubicacion;
     }
 
-    public Long getIdShow() {
+    public ShowEntity getIdShow() {
         return idShow;
     }
 
-    public void setIdShow(Long idShow) {
+    public void setIdShow(ShowEntity idShow) {
         this.idShow = idShow;
     }
 
-    public Long getIdUbicacion() {
+    public UbicacionEntity getIdUbicacion() {
         return idUbicacion;
     }
 
-    public void setIdUbicacion(Long idUbicacion) {
+    public void setIdUbicacion(UbicacionEntity idUbicacion) {
         this.idUbicacion = idUbicacion;
     }
+
+
     
 }

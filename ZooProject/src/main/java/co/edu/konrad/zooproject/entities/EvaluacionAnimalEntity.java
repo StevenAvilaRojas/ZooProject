@@ -12,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  * Definicion Tabla-Evaluacion-Animal
@@ -27,8 +29,9 @@ public class EvaluacionAnimalEntity implements Serializable{
     private Long id_evaluacion;
 
     //Id Animal
-    @Column(name = "id_animal")
-    private Long idAnimal;
+    @JoinColumn
+    @ManyToOne
+    private AnimalEntity idAnimal;
 
     //Observacion
     @Column
@@ -59,11 +62,11 @@ public class EvaluacionAnimalEntity implements Serializable{
         this.id_evaluacion = id_evaluacion;
     }
 
-    public Long getIdAnimal() {
+    public AnimalEntity getIdAnimal() {
         return idAnimal;
     }
 
-    public void setIdAnimal(Long idAnimal) {
+    public void setIdAnimal(AnimalEntity idAnimal) {
         this.idAnimal = idAnimal;
     }
 
@@ -82,8 +85,7 @@ public class EvaluacionAnimalEntity implements Serializable{
     public void setCalificacion(Long calificacion) {
         this.calificacion = calificacion;
     }
-    
-    
+
     public Date getFechaEvaluacionAnimal() {
         return fechaEvaluacionAnimal;
     }
@@ -91,5 +93,7 @@ public class EvaluacionAnimalEntity implements Serializable{
     public void setFechaEvaluacionAnimal(Date fechaEvaluacionAnimal) {
         this.fechaEvaluacionAnimal = fechaEvaluacionAnimal;
     }
+
+ 
 
 }

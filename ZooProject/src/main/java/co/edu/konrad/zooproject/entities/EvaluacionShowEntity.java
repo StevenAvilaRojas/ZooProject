@@ -5,11 +5,14 @@
  */
 package co.edu.konrad.zooproject.entities;
 
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 /**
  * Definicion Tabla EvaluacionShow
@@ -27,11 +30,16 @@ public class EvaluacionShowEntity {
     //Attr calificacion
     @Column
     private String calificacion;
-
+    //Atrr id_show
+    @JoinColumn
+    @ManyToOne
+    private ShowEntity idShow;
     //Attr observacion
     @Column
     private String observacion;
-
+    //fecha
+    @Column
+    private Date fecha;
     //Constructor
     public EvaluacionShowEntity() {
     }
@@ -54,6 +62,14 @@ public class EvaluacionShowEntity {
         this.calificacion = calificacion;
     }
 
+    public ShowEntity getIdShow() {
+        return idShow;
+    }
+
+    public void setIdShow(ShowEntity idShow) {
+        this.idShow = idShow;
+    }
+
     public String getObservacion() {
         return observacion;
     }
@@ -61,6 +77,16 @@ public class EvaluacionShowEntity {
     public void setObservacion(String observacion) {
         this.observacion = observacion;
     }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+
     
     
     
