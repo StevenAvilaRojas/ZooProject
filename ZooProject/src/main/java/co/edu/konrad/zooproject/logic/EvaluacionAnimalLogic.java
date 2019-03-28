@@ -21,7 +21,7 @@ public class EvaluacionAnimalLogic {
     @Inject
     private EvaluacionAnimalPersistence persistence;
 
-    public List<EvaluacionAnimalEntity> obtenerAnimalesAlimentos() {
+    public List<EvaluacionAnimalEntity> obtenerEvaluacionAnimal() {
         List<EvaluacionAnimalEntity> evaluacionAnimal = persistence.findAll();
         return evaluacionAnimal;
     }

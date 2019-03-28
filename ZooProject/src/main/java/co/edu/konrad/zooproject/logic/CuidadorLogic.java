@@ -42,7 +42,7 @@ public class CuidadorLogic {
     /**
      * obtener Cuidador por Id
      *
-     * @return acuidador
+     * @return cuidador
      */
     public CuidadorEntity obtenerCuidadorPorId(Long id) throws IllegalAccessException {
         CuidadorEntity cuidador = persistence.find(id);
@@ -63,7 +63,8 @@ public class CuidadorLogic {
 
     /**
      * @param Id, cuidador actualizar cuidador
-     * @return acuidadorActualizar
+     * @param cuidador
+     * @return cuidadorActualizar
      */
     public CuidadorEntity actualizarCuidador(Long Id, CuidadorEntity cuidador) {
         CuidadorEntity cuidadorActualizar = persistence.update(cuidador);
