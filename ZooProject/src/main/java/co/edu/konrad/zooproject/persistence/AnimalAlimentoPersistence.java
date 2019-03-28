@@ -24,7 +24,7 @@ public class AnimalAlimentoPersistence {
  * Metodo para encontrar Animal-Alimento por id
  * 
  */
-    public AnimalAlimentoEntity find(Long id){
+    public AnimalAlimentoEntity encontrarPorId(Long id){
         return em.find(AnimalAlimentoEntity.class,id);
     }
     
