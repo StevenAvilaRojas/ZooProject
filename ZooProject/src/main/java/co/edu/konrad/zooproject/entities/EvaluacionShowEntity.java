@@ -5,6 +5,7 @@
  */
 package co.edu.konrad.zooproject.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
 
 /**
  * Definicion Tabla EvaluacionShow
@@ -20,7 +22,7 @@ import javax.persistence.ManyToOne;
  * @author Steven Avila, Diego Cortazar and Alexander Nicholls
  */
 @Entity
-public class EvaluacionShowEntity {
+public class EvaluacionShowEntity implements Serializable {
 
     //Llave Primaria
     @Id
@@ -39,6 +41,7 @@ public class EvaluacionShowEntity {
     private String observacion;
     //fecha
     @Column
+    @Temporal(javax.persistence.TemporalType.DATE)
     private Date fecha;
     //Constructor
     public EvaluacionShowEntity() {

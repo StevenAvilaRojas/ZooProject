@@ -14,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
 
 /**
  * Definicion Tabla-Evaluacion-Animal
@@ -43,6 +44,7 @@ public class EvaluacionAnimalEntity implements Serializable{
 
     //Fecha evaluacion animal
     @Column(name ="fecha_evaluacion_animal")
+    @Temporal(javax.persistence.TemporalType.DATE)
     private Date fechaEvaluacionAnimal;
 
 
