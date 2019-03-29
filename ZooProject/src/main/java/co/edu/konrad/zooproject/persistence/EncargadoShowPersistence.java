@@ -23,6 +23,8 @@ public class EncargadoShowPersistence {
     /**
  * Metodo para encontrar Encargado-Show por id
  * 
+     * @param id
+     * @return 
  */
     public EncargadoShowEntity find(Long id){
         return em.find(EncargadoShowEntity.class,id);
@@ -31,6 +33,8 @@ public class EncargadoShowPersistence {
        /**
  * Permite actualizar un objeto de una tabla Encargado-Show
  * 
+     * @param p
+     * @return 
  */
     public EncargadoShowEntity create(EncargadoShowEntity p){
         em.persist(p);

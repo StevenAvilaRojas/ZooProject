@@ -28,6 +28,8 @@ public class ShowUbicacionPersistence {
     /**
  * Metodo para encontrar Ubicacion del Show por id
  * 
+     * @param id
+     * @return 
  */
     public ShowUbicacionEntity find(Long id){
         return em.find(ShowUbicacionEntity.class,id);
@@ -36,6 +38,8 @@ public class ShowUbicacionPersistence {
        /**
  * Permite actualizar un objeto de una tabla ubicacion del show
  * 
+     * @param p
+     * @return 
  */
     public ShowUbicacionEntity create(ShowUbicacionEntity p){
         em.persist(p);

@@ -23,6 +23,8 @@ public class EvaluacionShowPersistence {
     /**
  * Metodo para encontrar Evaluacion-Show por id
  * 
+     * @param id
+     * @return 
  */
     public EvaluacionShowEntity find(Long id){
         return em.find(EvaluacionShowEntity.class,id);
@@ -31,6 +33,8 @@ public class EvaluacionShowPersistence {
        /**
  * Permite actualizar un objeto de una tabla Evaluacion-Show
  * 
+     * @param p
+     * @return 
  */
     public EvaluacionShowEntity create(EvaluacionShowEntity p){
         em.persist(p);

@@ -23,6 +23,8 @@ public class AlimentoPersistence {
     /**
  * Metodo para encontrar Alimento por id
  * 
+     * @param id
+     * @return 
  */
     public AlimentoEntity encontrarPorId(Long id){
         return em.find(AlimentoEntity.class,id);
@@ -31,6 +33,8 @@ public class AlimentoPersistence {
        /**
  * Permite actualizar un objeto de una tabla Alimento
  * 
+     * @param p
+     * @return 
  */
     public AlimentoEntity create(AlimentoEntity p){
         em.persist(p);

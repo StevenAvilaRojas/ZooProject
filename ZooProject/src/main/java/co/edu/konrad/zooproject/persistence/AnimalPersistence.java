@@ -23,6 +23,8 @@ public class AnimalPersistence {
     /**
  * Metodo para encontrar Animal por id
  * 
+     * @param id
+     * @return 
  */
     public AnimalEntity find(Long id){
         return em.find(AnimalEntity.class,id);
@@ -31,6 +33,8 @@ public class AnimalPersistence {
        /**
  * Permite actualizar un objeto de una tabla Animal
  * 
+     * @param p
+     * @return 
  */
     public AnimalEntity create(AnimalEntity p){
         em.persist(p);

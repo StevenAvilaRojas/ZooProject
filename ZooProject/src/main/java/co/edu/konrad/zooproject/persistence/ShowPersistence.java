@@ -28,6 +28,8 @@ public class ShowPersistence {
     /**
  * Metodo para encontrar Show por id
  * 
+     * @param id
+     * @return 
  */
     public ShowEntity find(Long id){
         return em.find(ShowEntity.class,id);
@@ -36,6 +38,8 @@ public class ShowPersistence {
        /**
  * Permite actualizar un objeto de una tabla Show
  * 
+     * @param p
+     * @return 
  */
     public ShowEntity create(ShowEntity p){
         em.persist(p);

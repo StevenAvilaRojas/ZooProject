@@ -32,6 +32,8 @@ public class UbicacionPersistence {
     /**
      * Metodo para encontrar Ubicacion por id
      *
+     * @param id
+     * @return 
      */
     public UbicacionEntity find(Long id) {
         return em.find(UbicacionEntity.class, id);
@@ -40,6 +42,8 @@ public class UbicacionPersistence {
     /**
      * Permite actualizar un objeto de una tabla Ubicacion
      *
+     * @param p
+     * @return 
      */
     public UbicacionEntity create(UbicacionEntity p) {
         em.persist(p);

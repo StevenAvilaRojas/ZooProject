@@ -32,6 +32,8 @@ public class TipoAnimalPersistence {
     /**
      * Metodo para encontrar Tipo de Animal por id
      *
+     * @param id
+     * @return 
      */
     public TipoAnimalEntity find(Long id) {
         return em.find(TipoAnimalEntity.class, id);
@@ -40,6 +42,8 @@ public class TipoAnimalPersistence {
     /**
      * Permite actualizar un objeto de una tabla Tipo de Animal
      *
+     * @param p
+     * @return 
      */
     public TipoAnimalEntity create(TipoAnimalEntity p) {
         em.persist(p);

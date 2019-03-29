@@ -23,6 +23,8 @@ public class CuidadorPersistence {
     /**
  * Metodo para encontrar Cuidador por id
  * 
+     * @param id
+     * @return 
  */
     public CuidadorEntity find(Long id){
         return em.find(CuidadorEntity.class,id);
@@ -31,6 +33,8 @@ public class CuidadorPersistence {
        /**
  * Permite actualizar un objeto de una tabla Cuidador
  * 
+     * @param p
+     * @return 
  */
     public CuidadorEntity create(CuidadorEntity p){
         em.persist(p);
