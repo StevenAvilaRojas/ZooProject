@@ -32,7 +32,7 @@ public class AnimalEntity  implements Serializable{
     private TipoAnimalEntity idTipoAnimal;
     //Id Cuidador
     @JoinColumn
-    @OneToMany
+    @ManyToOne
     private CuidadorEntity idCuidador;
     //Especie
     @Column
