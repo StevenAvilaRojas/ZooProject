@@ -19,12 +19,12 @@ public final class CuidadorDTO {
     private Long celular;
 
     public CuidadorDTO(CuidadorEntity cuidador) {
-        this.idCuidador = getIdCuidador();
-        this.nomCompleto = getNomCompleto();
-        this.numeroId = getNumeroId();
-        this.tipoId = getTipoId();
-        this.fechaNacimiento = getFechaNacimiento();
-        this.celular = getCelular();
+        this.idCuidador = cuidador.getIdCuidador();
+        this.nomCompleto = cuidador.getNomCompleto();
+        this.numeroId = cuidador.getNumeroId();
+        this.tipoId = cuidador.getTipoId();
+        this.fechaNacimiento = cuidador.getFechaNacimiento();
+        this.celular = cuidador.getCelular();
     }
 
     public CuidadorEntity toEntity() {

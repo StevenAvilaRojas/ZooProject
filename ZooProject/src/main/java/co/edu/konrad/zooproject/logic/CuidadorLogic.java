@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.konrad.zooproject.logic;
 
 import co.edu.konrad.zooproject.entities.CuidadorEntity;
@@ -21,30 +16,19 @@ public class CuidadorLogic {
     @Inject
     private CuidadorPersistence persistence;
 
-    public List<CuidadorEntity> obtenerCuidador() {
-        List<CuidadorEntity> cuidador = persistence.findAll();
-        return cuidador;
-    }
-
-    /**
-     * obtener cuidador
-     *
-     * @return Id
-     */
-    public CuidadorEntity obtenerCuidador(Long id) throws IllegalAccessException {
-        CuidadorEntity cuidador = persistence.find(id);
-        if (cuidador == null) {
-            throw new IllegalAccessException("No Se Encontro Cuidador");
-        }
-        return cuidador;
+    public List<CuidadorEntity> obtenerCuidadores() {
+        List<CuidadorEntity> cuidadores = persistence.findAll();
+        return cuidadores;
     }
 
     /**
      * obtener Cuidador por Id
      *
+     * @param id
      * @return cuidador
+     * @throws java.lang.IllegalAccessException
      */
-    public CuidadorEntity obtenerCuidadorPorId(Long id) throws IllegalAccessException {
+    public CuidadorEntity obtenerCuidadoresPorId(Long id) throws IllegalAccessException {
         CuidadorEntity cuidador = persistence.find(id);
         if (cuidador == null) {
             throw new IllegalAccessException("No Se Encontro Cuidador");
@@ -62,11 +46,11 @@ public class CuidadorLogic {
     }
 
     /**
-     * @param Id, cuidador actualizar cuidador
      * @param cuidador
+     * @param id
      * @return cuidadorActualizar
      */
-    public CuidadorEntity actualizarCuidador(Long Id, CuidadorEntity cuidador) {
+    public CuidadorEntity actualizarCuidador(CuidadorEntity cuidador, Long id) {
         CuidadorEntity cuidadorActualizar = persistence.update(cuidador);
         return cuidadorActualizar;
 
