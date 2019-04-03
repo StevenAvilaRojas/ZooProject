@@ -28,21 +28,9 @@ public class EvaluacionShowLogic {
     }
 
     /**
-     * obtener evaluacionShow
-     *
-     * @return Id
-     */
-    public EvaluacionShowEntity obtenerEvaluacionShow(Long id) throws IllegalAccessException {
-        EvaluacionShowEntity evaluacionShow = persistence.find(id);
-        if (evaluacionShow == null) {
-            throw new IllegalAccessException("No Se Encontro Evaluacion Del Show");
-        }
-        return evaluacionShow;
-    }
-
-    /**
      * obtener evalaucionshow por Id
      *
+     * @param id
      * @return evaluacionshow
      */
     public EvaluacionShowEntity obtenerEvaluacionShowPorId(Long id) throws IllegalAccessException {
@@ -63,10 +51,11 @@ public class EvaluacionShowLogic {
     }
 
     /**
+     * @param evaluacionShow
      * @param Id, evaluacionShow actualizar evaluacion del show
      * @return evaluacionShowActualizar
      */
-    public EvaluacionShowEntity actualizarEvaluacionShow(Long Id, EvaluacionShowEntity evaluacionShow) {
+    public EvaluacionShowEntity actualizarEvaluacionShow(EvaluacionShowEntity evaluacionShow, Long Id) {
         EvaluacionShowEntity evaluacionShowActualizar = persistence.update(evaluacionShow);
         return evaluacionShowActualizar;
 

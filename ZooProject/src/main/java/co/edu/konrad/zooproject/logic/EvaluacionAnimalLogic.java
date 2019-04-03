@@ -26,22 +26,10 @@ public class EvaluacionAnimalLogic {
         return evaluacionAnimal;
     }
 
-    /**
-     * obtener evaluacionesAnimales
-     *
-     * @return Id
-     */
-    public EvaluacionAnimalEntity obtenerEvaluacionAnimal(Long id) throws IllegalAccessException {
-        EvaluacionAnimalEntity evaluacionAnimal = persistence.find(id);
-        if (evaluacionAnimal == null) {
-            throw new IllegalAccessException("No Se Encontro Evaluacion del Animal");
-        }
-        return evaluacionAnimal;
-    }
-
-    /**
+      /**
      * obtener EvaluacionAnimal por Id
      *
+     * @param id
      * @return evaluacionAnimal
      */
     public EvaluacionAnimalEntity obtenerEvaluacionAnimalPorId(Long id) throws IllegalAccessException {
@@ -62,10 +50,11 @@ public class EvaluacionAnimalLogic {
     }
 
     /**
+     * @param evaluacionAnimal
      * @param Id, evaluacionAnimal actualizar evaluacionAnimal
      * @return evaluacionAnimalActualizar
      */
-    public EvaluacionAnimalEntity actualizarEvaluacionAnimal(Long Id, EvaluacionAnimalEntity evaluacionAnimal) {
+    public EvaluacionAnimalEntity actualizarEvaluacionAnimal(EvaluacionAnimalEntity evaluacionAnimal, Long Id) {
         EvaluacionAnimalEntity evaluacionAnimalActualizar = persistence.update(evaluacionAnimal);
         return evaluacionAnimalActualizar;
 

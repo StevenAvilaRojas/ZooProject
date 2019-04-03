@@ -27,22 +27,11 @@ public class ShowLogic {
     }
 
     /**
-     * obtener show
-     *
-     * @return Id
-     */
-    public ShowEntity obtenerShow(Long id) throws IllegalAccessException {
-        ShowEntity show = persistence.find(id);
-        if (show == null) {
-            throw new IllegalAccessException("No Se Encontro Show");
-        }
-        return show;
-    }
-
-    /**
      * obtener Show por Id
      *
+     * @param id
      * @return Show
+     * @throws java.lang.IllegalAccessException
      */
     public ShowEntity obtenerShowPorId(Long id) throws IllegalAccessException {
         ShowEntity show = persistence.find(id);
@@ -62,10 +51,11 @@ public class ShowLogic {
     }
 
     /**
+     * @param show
      * @param Id, show actualizar show
      * @return showActualizar
      */
-    public ShowEntity actualizarShow(Long Id, ShowEntity show) {
+    public ShowEntity actualizarShow(ShowEntity show, Long Id) {
         ShowEntity showActualizar = persistence.update(show);
         return showActualizar;
 

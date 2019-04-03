@@ -28,22 +28,11 @@ public class ShowAnimalLogic {
     }
 
     /**
-     * obtener ShowAnimal
-     *
-     * @return Id
-     */
-    public ShowAnimalEntity obtenerShowAnimal(Long id) throws IllegalAccessException {
-        ShowAnimalEntity showAnimal = persistence.find(id);
-        if (showAnimal == null) {
-            throw new IllegalAccessException("No Se Encontro Show Animal");
-        }
-        return showAnimal;
-    }
-
-    /**
      * obtener Show Animal por Id
      *
+     * @param id
      * @return Show Animal
+     * @throws java.lang.IllegalAccessException
      */
     public ShowAnimalEntity obtenerShowAnimalPorId(Long id) throws IllegalAccessException {
         ShowAnimalEntity showAnimal = persistence.find(id);
@@ -63,10 +52,11 @@ public class ShowAnimalLogic {
     }
 
     /**
+     * @param showAnimal
      * @param Id, showAnimal actualizar showAnimal
      * @return showAnimalActualizar
      */
-    public ShowAnimalEntity actualizarShowAnimal(Long Id, ShowAnimalEntity showAnimal) {
+    public ShowAnimalEntity actualizarShowAnimal(ShowAnimalEntity showAnimal, Long Id) {
         ShowAnimalEntity showAnimalActualizar = persistence.update(showAnimal);
         return showAnimalActualizar;
 

@@ -27,18 +27,6 @@ public class EncargadoShowLogic {
         return encargadoShow;
     }
 
-    /**
-     * obtener encargadoShow
-     *
-     * @return Id
-     */
-    public EncargadoShowEntity obtenerEncargadoShow(Long id) throws IllegalAccessException {
-        EncargadoShowEntity encargadoShow = persistence.find(id);
-        if (encargadoShow == null) {
-            throw new IllegalAccessException("No Se Encontro Encargado Show");
-        }
-        return encargadoShow;
-    }
 
     /**
      * obtener EncargadoShow por Id
@@ -63,10 +51,11 @@ public class EncargadoShowLogic {
     }
 
     /**
+     * @param encargadoShow
      * @param Id, encargadoShow actualizar encargadoShow
      * @return encargadoShowActualizar
      */
-    public EncargadoShowEntity actualizarEncargadoShow(Long Id, EncargadoShowEntity encargadoShow) {
+    public EncargadoShowEntity actualizarEncargadoShow(EncargadoShowEntity encargadoShow,Long Id) {
         EncargadoShowEntity encargadoShowActualizar = persistence.update(encargadoShow);
         return encargadoShowActualizar;
 
