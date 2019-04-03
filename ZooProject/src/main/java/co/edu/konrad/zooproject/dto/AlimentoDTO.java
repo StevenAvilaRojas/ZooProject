@@ -19,10 +19,10 @@ public final class AlimentoDTO {
     private Date horaAlimento;
 
     public AlimentoDTO(AlimentoEntity alimento) {
-        this.idAlimento = getIdAlimento();
-        this.tipoAnimal = getTipoAnimal();
-        this.tipoAlimento = getTipoAlimento();
-        this.horaAlimento = getHoraAlimento();
+        this.idAlimento = alimento.getIdAlimento();
+        this.tipoAnimal = alimento.getTipoAnimal();
+        this.tipoAlimento = alimento.getTipoAlimento();
+        this.horaAlimento = alimento.getHoraAlimento();
     }
 
     public AlimentoEntity toEntity() {

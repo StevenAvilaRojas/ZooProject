@@ -21,6 +21,7 @@ public class ApplicationConfig extends Application{
     
     private void addRestResource(Set<Class<?>> Resources){
         Resources.add(CuidadorResource.class);
-    }
+        Resources.add(AlimentoResource.class);
+    }    
 }
 

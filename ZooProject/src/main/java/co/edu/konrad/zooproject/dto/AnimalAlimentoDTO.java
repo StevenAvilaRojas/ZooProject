@@ -17,9 +17,9 @@ public final class AnimalAlimentoDTO {
     private AlimentoEntity alimento;
 
     public AnimalAlimentoDTO(AnimalAlimentoEntity animalAlimento) {
-        this.idAnimalAlimento = getIdAnimalAlimento();
-        this.animal = getAnimal();
-        this.alimento = getAlimento();
+        this.idAnimalAlimento = animalAlimento.getIdAnimalAlimento();
+        this.animal = animalAlimento.getAnimal();
+        this.alimento = animalAlimento.getAlimento();
     }
 
     public AnimalAlimentoEntity toEntity() {
