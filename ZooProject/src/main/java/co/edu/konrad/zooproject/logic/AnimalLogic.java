@@ -26,18 +26,6 @@ public class AnimalLogic {
         return animales;
     }
 
-    /**
-     * obtener animal
-     *
-     * @return Id
-     */
-    public AnimalEntity obtenerAnimal(Long id) throws IllegalAccessException {
-        AnimalEntity animal = persistence.find(id);
-        if (animal == null) {
-            throw new IllegalAccessException("No Se Encontro Animal");
-        }
-        return animal;
-    }
 
     /**
      * obtener Animal por Id
@@ -65,7 +53,7 @@ public class AnimalLogic {
      * @param Id,  actualizar animal
      * @return animalActualizar
      */
-    public AnimalEntity actualizarAnimal(Long Id, AnimalEntity animal) {
+    public AnimalEntity actualizarAnimal(AnimalEntity animal, Long Id) {
         AnimalEntity animalActualizar = persistence.update(animal);
         return animalActualizar;
 

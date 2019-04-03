@@ -25,19 +25,6 @@ public class AlimentoLogic {
         List<AlimentoEntity> alimentos = persistence.findAll();
         return alimentos;
     }
-
-    /**
-     * obtener alimento
-     * @return Id
-     */
-    public AlimentoEntity obtenerAlimento(Long id) throws IllegalAccessException {
-        AlimentoEntity alimento = persistence.encontrarPorId(id);
-        if (alimento == null) {
-            throw new IllegalAccessException("No Se Encontro Alimento");
-        }
-        return alimento;
-    }
-
     
     /**
      * obtener alimento por Id
@@ -66,7 +53,7 @@ public class AlimentoLogic {
  *actualizar alimento
  *@return alimentoActualizar
  */
-    public AlimentoEntity actualizarAlimento(Long Id, AlimentoEntity alimento) {
+    public AlimentoEntity actualizarAlimento(AlimentoEntity alimento, Long Id) {
         AlimentoEntity alimentoActualizar = persistence.update(alimento);
         return alimentoActualizar;
 

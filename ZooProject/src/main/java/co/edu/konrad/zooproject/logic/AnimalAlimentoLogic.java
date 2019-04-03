@@ -27,19 +27,6 @@ public class AnimalAlimentoLogic {
     }
 
     /**
-     * obtener animalalimento
-     *
-     * @return Id
-     */
-    public AnimalAlimentoEntity obtenerAnimalAlimento(Long id) throws IllegalAccessException {
-        AnimalAlimentoEntity animalAlimento = persistence.encontrarPorId(id);
-        if (animalAlimento == null) {
-            throw new IllegalAccessException("No Se Encontro Animal por Alimento");
-        }
-        return animalAlimento;
-    }
-
-    /**
      * obtener Animalalimento por Id
      *
      * @return animalalimento
@@ -65,7 +52,7 @@ public class AnimalAlimentoLogic {
      * @param Id, alimento actualizar alimento
      * @return alimentoActualizar
      */
-    public AnimalAlimentoEntity actualizarAnimalAlimento(Long Id, AnimalAlimentoEntity animalAlimento) {
+    public AnimalAlimentoEntity actualizarAnimalAlimento(AnimalAlimentoEntity animalAlimento, Long Id) {
         AnimalAlimentoEntity animalAlimentoActualizar = persistence.update(animalAlimento);
         return animalAlimentoActualizar;
 
