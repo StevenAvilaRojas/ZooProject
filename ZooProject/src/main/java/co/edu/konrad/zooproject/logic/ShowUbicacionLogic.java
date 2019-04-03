@@ -28,22 +28,11 @@ public class ShowUbicacionLogic {
     }
 
     /**
-     * obtener showUbicacion
-     *
-     * @return Id
-     */
-    public ShowUbicacionEntity obtenerShowUbicacion(Long id) throws IllegalAccessException {
-        ShowUbicacionEntity showUbicacion = persistence.find(id);
-        if (showUbicacion == null) {
-            throw new IllegalAccessException("No Se Encontro Show Por Ubicacion");
-        }
-        return showUbicacion;
-    }
-
-    /**
      * obtener showUbicacion por Id
      *
+     * @param id
      * @return show por ubicacion
+     * @throws java.lang.IllegalAccessException
      */
     public ShowUbicacionEntity obtenerShowUbicacionPorId(Long id) throws IllegalAccessException {
         ShowUbicacionEntity showUbicacion = persistence.find(id);
@@ -66,7 +55,7 @@ public class ShowUbicacionLogic {
      * @param Id, showUbicacion actualizar showUbicacion
      * @return showUbicacionActualizar
      */
-    public ShowUbicacionEntity actualizarCuidador(Long Id, ShowUbicacionEntity showUbicacion) {
+    public ShowUbicacionEntity actualizarCuidador(ShowUbicacionEntity showUbicacion, Long Id) {
         ShowUbicacionEntity showUbicacionActualizar = persistence.update(showUbicacion);
         return showUbicacionActualizar;
 

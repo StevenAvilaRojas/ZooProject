@@ -27,22 +27,11 @@ public class UbicacionLogic {
     }
 
     /**
-     * obtener Ubicacion
-     *
-     * @return Id
-     */
-    public UbicacionEntity obtenerUbicacion(Long id) throws IllegalAccessException {
-        UbicacionEntity ubicacion = persistence.find(id);
-        if (ubicacion == null) {
-            throw new IllegalAccessException("No Se Encontro Ubicacion");
-        }
-        return ubicacion;
-    }
-
-    /**
      * obtener Ubicacion por Id
      *
+     * @param id
      * @return Ubicacion
+     * @throws java.lang.IllegalAccessException
      */
     public UbicacionEntity obtenerUbicacionPorId(Long id) throws IllegalAccessException {
         UbicacionEntity ubicacion = persistence.find(id);
@@ -66,7 +55,7 @@ public class UbicacionLogic {
      * @param ubicacion
      * @return ubicacionActualizar
      */
-    public UbicacionEntity actualizarUbicacion(Long Id, UbicacionEntity ubicacion) {
+    public UbicacionEntity actualizarUbicacion(UbicacionEntity ubicacion, Long Id) {
         UbicacionEntity ubicacionActualizar = persistence.update(ubicacion);
         return ubicacionActualizar;
 

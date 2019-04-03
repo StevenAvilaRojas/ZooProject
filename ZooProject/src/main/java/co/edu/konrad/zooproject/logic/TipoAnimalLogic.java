@@ -27,22 +27,11 @@ public class TipoAnimalLogic {
     }
 
     /**
-     * obtener TipoAnimal
-     *
-     * @return Id
-     */
-    public TipoAnimalEntity obtenerTipoAnimal(Long id) throws IllegalAccessException {
-        TipoAnimalEntity tipoAnimal = persistence.find(id);
-        if (tipoAnimal == null) {
-            throw new IllegalAccessException("No Se Tipo Animal");
-        }
-        return tipoAnimal;
-    }
-
-    /**
      * obtener TipoAnimal por Id
      *
+     * @param id
      * @return Tipo de Animal
+     * @throws java.lang.IllegalAccessException
      */
     public TipoAnimalEntity obtenerTipoAnimalPorId(Long id) throws IllegalAccessException {
         TipoAnimalEntity tipoAnimal = persistence.find(id);
@@ -66,7 +55,7 @@ public class TipoAnimalLogic {
      * @param tipoAnimal
      * @return tipoAnimalActualizar
      */
-    public TipoAnimalEntity actualizarTipoAnimal(Long Id, TipoAnimalEntity tipoAnimal) {
+    public TipoAnimalEntity actualizarTipoAnimal(TipoAnimalEntity tipoAnimal, Long Id) {
         TipoAnimalEntity tipoAnimalActualizar = persistence.update(tipoAnimal);
         return tipoAnimalActualizar;
 
