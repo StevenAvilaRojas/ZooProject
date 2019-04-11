@@ -17,9 +17,9 @@ public final class ShowUbicacionDTO {
     private UbicacionEntity idUbicacion;
 
     public ShowUbicacionDTO(ShowUbicacionEntity showUbicacion) {
-        this.id_show_ubicacion = getId_show_ubicacion();
-        this.idShow = getIdShow();
-        this.idUbicacion = getIdUbicacion();
+        this.id_show_ubicacion = showUbicacion.getId_show_ubicacion();
+        this.idShow = showUbicacion.getIdShow();
+        this.idUbicacion = showUbicacion.getIdUbicacion();
     }
 
     public ShowUbicacionEntity toEntity() {

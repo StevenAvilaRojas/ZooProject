@@ -19,11 +19,11 @@ public final class EvaluacionShowDTO {
     private Date fecha;
 
     public EvaluacionShowDTO(EvaluacionShowEntity evaluacionShow) {
-        this.idEvaluacionShow = getIdEvaluacionShow();
-        this.calificacion = getCalificacion();
-        this.idShow = getIdShow();
-        this.observacion = getObservacion();
-        this.fecha = getFecha();
+        this.idEvaluacionShow = evaluacionShow.getIdEvaluacionShow();
+        this.calificacion = evaluacionShow.getCalificacion();
+        this.idShow = evaluacionShow.getIdShow();
+        this.observacion = evaluacionShow.getObservacion();
+        this.fecha = evaluacionShow.getFecha();
     }
 
     public EvaluacionShowEntity toEntity() {

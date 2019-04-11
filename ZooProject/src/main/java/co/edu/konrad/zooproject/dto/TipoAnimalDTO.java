@@ -14,8 +14,8 @@ public final class TipoAnimalDTO {
     private String nombreAnimal;
 
     public TipoAnimalDTO(TipoAnimalEntity tipoAnimal) {
-        this.idTipoAnimal = getIdTipoAnimal();
-        this.nombreAnimal = getNombreAnimal();
+        this.idTipoAnimal = tipoAnimal.getIdTipoAnimal();
+        this.nombreAnimal = tipoAnimal.getNombreAnimal();
     }
 
     public TipoAnimalEntity toEntity() {

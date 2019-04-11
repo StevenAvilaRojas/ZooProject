@@ -21,13 +21,13 @@ public final class AnimalDTO {
     private String descripcion;
 
     public AnimalDTO(AnimalEntity animal) {
-        this.idAnimal = getIdAnimal();
-        this.nombreAnimal = getNombreAnimal();
-        this.nombreCientifico = getNombreCientifico();
-        this.idTipoAnimal = getIdTipoAnimal();
-        this.idCuidador = getIdCuidador();
-        this.especie = getEspecie();
-        this.descripcion = getDescripcion();
+        this.idAnimal = animal.getIdAnimal();
+        this.nombreAnimal = animal.getNombreAnimal();
+        this.nombreCientifico = animal.getNombreCientifico();
+        this.idTipoAnimal = animal.getIdTipoAnimal();
+        this.idCuidador = animal.getIdCuidador();
+        this.especie = animal.getEspecie();
+        this.descripcion = animal.getDescripcion();
     }
 
     public AnimalEntity toEntity() {

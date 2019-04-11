@@ -19,11 +19,11 @@ public final class EvaluacionAnimalDTO {
     private Date fechaEvaluacionAnimal;
 
     public EvaluacionAnimalDTO(EvaluacionAnimalEntity evaluacionAnimal) {
-        this.id_evaluacion = getId_evaluacion();
-        this.idAnimal = getIdAnimal();
-        this.observacion = getObservacion();
-        this.calificacion = getCalificacion();
-        this.fechaEvaluacionAnimal = getFechaEvaluacionAnimal();
+        this.id_evaluacion = evaluacionAnimal.getId_evaluacion();
+        this.idAnimal = evaluacionAnimal.getIdAnimal();
+        this.observacion = evaluacionAnimal.getObservacion();
+        this.calificacion = evaluacionAnimal.getCalificacion();
+        this.fechaEvaluacionAnimal = evaluacionAnimal.getFechaEvaluacionAnimal();
     }
 
     public EvaluacionAnimalEntity toEntity() {

@@ -19,12 +19,12 @@ public final class EncargadoShowDTO {
     private String nombre;
     
     public EncargadoShowDTO(EncargadoShowEntity encargadoShow) {
-        this.idEncargadoShow = getIdEncargadoShow();
-        this.tipoId = getTipoId();
-        this.numeroId = getNumeroId();
-        this.fechaNacimiento = getFechaNacimiento();
-        this.celular = getCelular();
-        this.nombre = getNombre();
+        this.idEncargadoShow = encargadoShow.getIdEncargadoShow();
+        this.tipoId = encargadoShow.getTipoId();
+        this.numeroId = encargadoShow.getNumeroId();
+        this.fechaNacimiento = encargadoShow.getFechaNacimiento();
+        this.celular = encargadoShow.getCelular();
+        this.nombre = encargadoShow.getNombre();
     }
 
     public EncargadoShowEntity toEntity() {

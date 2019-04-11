@@ -17,9 +17,9 @@ public final class ShowAnimalDTO {
     private AnimalEntity idAnimal;
 
     public ShowAnimalDTO(ShowAnimalEntity showAnimal) {
-        this.id_show_animal = getId_show_animal();
-        this.idShow = getIdShow();
-        this.idAnimal = getIdAnimal();
+        this.id_show_animal = showAnimal.getId_show_animal();
+        this.idShow = showAnimal.getIdShow();
+        this.idAnimal = showAnimal.getIdAnimal();
     }
 
     public ShowAnimalEntity toEntity() {

@@ -19,12 +19,12 @@ public final class ShowDTO {
     private String nombre;
 
     public ShowDTO(ShowEntity show) {
-        this.idShow = getIdShow();
-        this.idUbicacion = getIdUbicacion();
-        this.horaInicio = getHoraInicio();
-        this.horaFin = getHoraFin();
-        this.animales = getAnimales();
-        this.nombre = getNombre();
+        this.idShow = show.getIdShow();
+        this.idUbicacion = show.getIdUbicacion();
+        this.horaInicio = show.getHoraIncio();
+        this.horaFin = show.getHoraFin();
+        this.animales = show.getAnimales();
+        this.nombre = show.getNombre();
     }
 
     public ShowEntity toEntity() {
