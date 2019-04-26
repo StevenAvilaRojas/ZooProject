@@ -1,37 +1,55 @@
-.slider{
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
 }
 
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
 
-    animation: cambio 20s infinite alternate;
-    animation-timing-function: ease-in;
+	animation: cambio 20s infinite alternate linear;
 }
 
-.slider li{
-    width: 100%
-    list-style: none;
+.slider li {
+	width: 100%;
+	list-style: none;
 }
 
-.slider img{
-    width: 100%;
+.slider img {
+	width: 100%;
 }
 
-@keyframes cambio {
-    0% {margin-left: 0; }
-    20% {margin-left: 0; }
+@keyframes cambio{
+0%{background-image:url("1.jpg");}
+20%{background-image:url("2.jpg");}
+40%{background-image:url("3.jpg");}
+60%{background-image:url("4.jpg");}
+80%{background-image:url("5.jpg");}
+100%{background-image:url("6.jpg");}
+}
 
-    25% {margin-left: -100%; }
-    45% {margin-left: -100%; }
 
-    50% {margin-left: -200%; }
-    70% {margin-left: -200%; }
+body {
+  /* Location of the image */
+  background-image: url(img/lionBackground.png);
 
-    75% {margin-left: -300; }
-    100% {margin-left: -300; }
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #f8f8ff;
 }
