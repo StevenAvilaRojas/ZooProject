@@ -22,6 +22,13 @@ public class ApplicationConfig extends Application{
     private void addRestResource(Set<Class<?>> Resources){
         Resources.add(CuidadorResource.class);
         Resources.add(AlimentoResource.class);
+        Resources.add(AnimalResource.class);
+        Resources.add(EncargadoShowResource.class);
+        Resources.add(EvaluacionAnimalResource.class);
+        Resources.add(EvaluacionShowResource.class);
+        Resources.add(ShowResource.class);
+        Resources.add(TipoAnimalResource.class);
+        Resources.add(UbicacionResource.class);
     }    
 }
 
