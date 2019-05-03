@@ -22,7 +22,7 @@ import javax.ws.rs.core.MediaType;
  */
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Path("/encargadoshows")
+@Path("/encargadoShows")
 public class EncargadoShowResource {
     @EJB
     private EncargadoShowLogic encargadoShowLogic;
