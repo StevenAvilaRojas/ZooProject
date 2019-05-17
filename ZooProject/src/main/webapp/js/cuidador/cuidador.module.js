@@ -1,0 +1,1 @@
+var cuidadorModule = angular.module("cuidadorModule", []);
