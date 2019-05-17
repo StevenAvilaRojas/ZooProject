@@ -6,7 +6,7 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
         $urlRouterProvider.otherwise('/');
 
         $stateProvider.state("cuidadores", {
-            url: '/',
+            url: '/cuidadores',
             //Donde lo va a publicar
             views: {
                 mainView: {
