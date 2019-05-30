@@ -1,6 +1,6 @@
-var productoModule = angular.module('cuidadorModule');
+var cuidadorModule = angular.module('cuidadorModule');
 
-productoModule.controller('caCuidadorCtrl', ['$scope', '$http', '$state', function($scope, $http, $state){
+cuidadorModule.controller('caCuidadorCtrl', ['$scope', '$http', '$state', function($scope, $http, $state){
       var id = $state.params.id;
       
       $scope.cuidador = {};
