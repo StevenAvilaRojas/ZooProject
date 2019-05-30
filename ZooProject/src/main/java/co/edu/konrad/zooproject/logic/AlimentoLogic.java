@@ -25,9 +25,10 @@ public class AlimentoLogic {
         List<AlimentoEntity> alimentos = persistence.findAll();
         return alimentos;
     }
-    
+
     /**
      * obtener alimento por Id
+     *
      * @return alimento
      */
     public AlimentoEntity obtenerAlimentoPorId(Long id) throws IllegalAccessException {
@@ -37,36 +38,35 @@ public class AlimentoLogic {
         }
         return alimento;
     }
-    
-    
+
     /**
- * @param alimento
- *crear alimento
- *@return alimento
- */
+     * @param alimento crear alimento
+     * @return alimento
+     */
     public AlimentoEntity crearAlimento(AlimentoEntity alimento) {
         persistence.create(alimento);
         return alimento;
     }
-/**
- * @param Id, alimento
- *actualizar alimento
- *@return alimentoActualizar
- */
+
+    /**
+     * @param Id, alimento actualizar alimento
+     * @return alimentoActualizar
+     */
     public AlimentoEntity actualizarAlimento(AlimentoEntity alimento, Long Id) {
         AlimentoEntity alimentoActualizar = persistence.update(alimento);
         return alimentoActualizar;
 
     }
-/**
- * eliminar alimento
- *
- * @param Id
- * 
- */
+
+    /**
+     * eliminar alimento
+     *
+     * @param Id
+     *
+     */
     public void eliminarAlimento(Long Id) {
         persistence.delete(Id);
 
     }
-    
+
 }
