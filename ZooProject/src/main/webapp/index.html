@@ -19,20 +19,17 @@
 
     </head>
 
-    <body>
-        <!-- Creacion Navbar -->
-
+    <body background = "Web Pages/Images/7.jpg">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="#">ZooProject</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#!/home">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/home">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -64,75 +61,35 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
+            <div ui-view = "mainView"> </div>
 
-        <!-- Creacion Slider -->
-        <div class="flexslider">
-            <ul class="slides">
+            <script src="./js/app.js"></script>
+            <script src="./js/routes.js"></script>
 
-                <li>
-                    <img src="Images/1.jpg" alt="">
-                    <section class="caption">
-                    </section>
-                </li>
+            <script src="./js/cuidador/cuidador.module.js"></script>
+            <script src="./js/cuidador/Listar/cuidador.ctrl.js"></script>
+            <script src="./js/cuidador/crearActualizar/crearActualizarCuidador.ctrl.js"></script>
 
-                <li>
-                    <img src="Images/2.jpg" alt="">
-                    <section class="caption">
-                    </section>
-                </li>
+            <script src="./js/ubicacion/ubicacion.module.js"></script>
+            <script src="./js/ubicacion/Listar/ubicacion.ctrl.js"></script>
+            <script src="./js/ubicacion/crearActualizar/crearActualizarUbicacion.ctrl.js"></script>
 
-                <li>
-                    <img src="Images/3.jpg" alt="">
-                    <section class="caption">
-                    </section>
-                </li>
+            <script src="./js/show/show.module.js"></script>
+            <script src="./js/show/Listar/show.ctrl.js"></script>
+            <script src="./js/show/crearActualizar/crearActualizarShow.ctrl.js"></script>
 
-                <li>
-                    <img src="Images/5.jpg" alt="">
-                    <section class="caption">
-                    </section>
-                </li>
+            <script src="./js/tipoAnimal/tipoAnimal.module.js"></script>
+            <script src="./js/tipoAnimal/Listar/tipoAnimal.ctrl.js"></script>
+            <script src="./js/tipoAnimal/crearActualizar/crearActualizarTipoAnimal.ctrl.js"></script>
 
-                <li>
-                    <img src="Images/6.jpg" alt="">
-                    <section class="caption">
-                    </section>
-                </li>
+            <script src="./js/animal/animal.module.js"></script>
+            <script src="./js/animal/Listar/animal.ctrl.js"></script>
+            <script src="./js/animal/crearActualizar/crearActualizarAnimal.ctrl.js"></script>
 
-            </ul>
-        </div>
-
-
-        <div ui-view = "mainView"> </div>
-
-        <script src="./js/app.js"></script>
-        <script src="./js/routes.js"></script>
-
-        <script src="./js/cuidador/cuidador.module.js"></script>
-        <script src="./js/cuidador/Listar/cuidador.ctrl.js"></script>
-        <script src="./js/cuidador/crearActualizar/crearActualizarCuidador.ctrl.js"></script>
-
-        <script src="./js/ubicacion/ubicacion.module.js"></script>
-        <script src="./js/ubicacion/Listar/ubicacion.ctrl.js"></script>
-        <script src="./js/ubicacion/crearActualizar/crearActualizarUbicacion.ctrl.js"></script>
-
-        <script src="./js/show/show.module.js"></script>
-        <script src="./js/show/Listar/show.ctrl.js"></script>
-        <script src="./js/show/crearActualizar/crearActualizarShow.ctrl.js"></script>
-
-        <script src="./js/tipoAnimal/tipoAnimal.module.js"></script>
-        <script src="./js/tipoAnimal/Listar/tipoAnimal.ctrl.js"></script>
-        <script src="./js/tipoAnimal/crearActualizar/crearActualizarTipoAnimal.ctrl.js"></script>
-
-        <script src="./js/animal/animal.module.js"></script>
-        <script src="./js/animal/Listar/animal.ctrl.js"></script>
-        <script src="./js/animal/crearActualizar/crearActualizarAnimal.ctrl.js"></script>
-
-        <script src="./js/alimento/alimento.module.js"></script>
-        <script src="./js/alimento/Listar/alimento.ctrl.js"></script>
-        <script src="./js/alimento/crearActualizar/crearActualizarAlimento.ctrl.js"></script>
+            <script src="./js/alimento/alimento.module.js"></script>
+            <script src="./js/alimento/Listar/alimento.ctrl.js"></script>
+            <script src="./js/alimento/crearActualizar/crearActualizarAlimento.ctrl.js"></script>
 
     </body>
 

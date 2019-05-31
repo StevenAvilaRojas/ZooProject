@@ -10,7 +10,7 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
             //Donde lo va a publicar
             views: {
                 mainView: {
-                    templateUrl: '.index.html'
+                    templateUrl: './js/home/home.html'
                 }
             }
         });

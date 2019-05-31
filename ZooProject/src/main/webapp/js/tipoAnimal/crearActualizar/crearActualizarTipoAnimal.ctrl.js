@@ -36,4 +36,8 @@ tipoAnimalModule.controller('caTipoAnimalCtrl', ['$scope', '$http', '$state', fu
 
          }
       };
+      
+        $scope.redirigiTipoAnimal = function(){
+            $state.go('tipoAnimales');
+      };
 }]);
