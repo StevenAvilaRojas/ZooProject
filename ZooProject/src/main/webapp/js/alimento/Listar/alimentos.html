@@ -1,0 +1,21 @@
+<div id="tableFestivales">
+    <!--striped coloca color intercalado en las tablas -->
+    <table class="table table-striped">
+        <thead>
+        <th>Tipo Animal</th>
+        <th>Tipo Alimento</th>
+        <th>Hora Alimento</th>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="alimento in alimentos">
+                <td>{{alimento.tipoAnimal}}</td> 
+                <td>{{alimento.tipoAlimento}}</td>
+                <td>{{alimento.horaAlimento}}</td>
+                <td> <button class="btn btn-primary" ui-sref="actualizarAlimento({id:alimento.id})">Editar</button>
+                    <button class="btn btn-danger" ng-click="eliminar(alimento.id)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
