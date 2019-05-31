@@ -20,6 +20,9 @@ public final class AnimalDTO {
     private String especie;
     private String descripcion;
 
+    public AnimalDTO() {
+    }
+
     public AnimalDTO(AnimalEntity animal) {
         this.idAnimal = animal.getIdAnimal();
         this.nombreAnimal = animal.getNombreAnimal();
@@ -112,6 +115,6 @@ public final class AnimalDTO {
         this.descripcion = descripcion;
     }
 
-   
+
 
 }

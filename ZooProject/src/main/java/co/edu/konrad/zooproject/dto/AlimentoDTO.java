@@ -18,6 +18,10 @@ public final class AlimentoDTO {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date horaAlimento;
 
+    public AlimentoDTO() {
+    }
+
+
     public AlimentoDTO(AlimentoEntity alimento) {
         this.idAlimento = alimento.getIdAlimento();
         this.tipoAnimal = alimento.getTipoAnimal();

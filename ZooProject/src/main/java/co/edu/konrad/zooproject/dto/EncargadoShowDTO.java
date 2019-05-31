@@ -17,7 +17,10 @@ public final class EncargadoShowDTO {
     private Date fechaNacimiento;
     private Long celular;
     private String nombre;
-    
+
+    public EncargadoShowDTO() {
+    }
+
     public EncargadoShowDTO(EncargadoShowEntity encargadoShow) {
         this.idEncargadoShow = encargadoShow.getIdEncargadoShow();
         this.tipoId = encargadoShow.getTipoId();

@@ -18,6 +18,9 @@ public final class ShowDTO {
     private String animales;
     private String nombre;
 
+    public ShowDTO() {
+    }
+
     public ShowDTO(ShowEntity show) {
         this.idShow = show.getIdShow();
         this.idUbicacion = show.getIdUbicacion();
@@ -100,6 +103,6 @@ public final class ShowDTO {
         this.nombre = nombre;
     }
 
-  
+
 
 }

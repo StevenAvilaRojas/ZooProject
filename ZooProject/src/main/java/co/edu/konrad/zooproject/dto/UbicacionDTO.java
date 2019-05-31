@@ -13,6 +13,9 @@ public final class UbicacionDTO {
     private Long idUbicacion;
     private boolean ocupado;
 
+    public UbicacionDTO() {
+    }
+
     public UbicacionDTO(UbicacionEntity ub) {
         this.idUbicacion = ub.getId_ubicacion();
         this.ocupado = ub.isOcupado();

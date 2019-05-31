@@ -13,6 +13,9 @@ public final class TipoAnimalDTO {
     private Long idTipoAnimal;
     private String nombreAnimal;
 
+    public TipoAnimalDTO() {
+    }
+
     public TipoAnimalDTO(TipoAnimalEntity tipoAnimal) {
         this.idTipoAnimal = tipoAnimal.getIdTipoAnimal();
         this.nombreAnimal = tipoAnimal.getNombreAnimal();
@@ -55,6 +58,6 @@ public final class TipoAnimalDTO {
         this.nombreAnimal = nombreAnimal;
     }
 
-   
+
 
 }

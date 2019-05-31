@@ -16,6 +16,9 @@ public final class AnimalAlimentoDTO {
     private AnimalEntity animal;
     private AlimentoEntity alimento;
 
+    public AnimalAlimentoDTO() {
+    }
+
     public AnimalAlimentoDTO(AnimalAlimentoEntity animalAlimento) {
         this.idAnimalAlimento = animalAlimento.getIdAnimalAlimento();
         this.animal = animalAlimento.getAnimal();

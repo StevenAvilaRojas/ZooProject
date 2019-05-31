@@ -18,6 +18,9 @@ public final class EvaluacionShowDTO {
     private String observacion;
     private Date fecha;
 
+    public EvaluacionShowDTO() {
+    }
+
     public EvaluacionShowDTO(EvaluacionShowEntity evaluacionShow) {
         this.idEvaluacionShow = evaluacionShow.getIdEvaluacionShow();
         this.calificacion = evaluacionShow.getCalificacion();
@@ -90,6 +93,6 @@ public final class EvaluacionShowDTO {
         this.fecha = fecha;
     }
 
-  
+
 
 }

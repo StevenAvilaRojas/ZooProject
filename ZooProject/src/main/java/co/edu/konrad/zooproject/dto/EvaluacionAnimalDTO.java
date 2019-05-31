@@ -18,6 +18,9 @@ public final class EvaluacionAnimalDTO {
     private Long calificacion;
     private Date fechaEvaluacionAnimal;
 
+    public EvaluacionAnimalDTO() {
+    }
+
     public EvaluacionAnimalDTO(EvaluacionAnimalEntity evaluacionAnimal) {
         this.id_evaluacion = evaluacionAnimal.getId_evaluacion();
         this.idAnimal = evaluacionAnimal.getIdAnimal();
@@ -90,5 +93,5 @@ public final class EvaluacionAnimalDTO {
         this.fechaEvaluacionAnimal = fechaEvaluacionAnimal;
     }
 
-   
+
 }
