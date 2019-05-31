@@ -18,6 +18,10 @@ public final class CuidadorDTO {
     private Date fechaNacimiento;
     private Long celular;
 
+    public CuidadorDTO() {
+
+    }
+
     public CuidadorDTO(CuidadorEntity cuidador) {
         this.idCuidador = cuidador.getIdCuidador();
         this.nomCompleto = cuidador.getNomCompleto();
@@ -99,7 +103,5 @@ public final class CuidadorDTO {
     public void setCelular(Long celular) {
         this.celular = celular;
     }
-
-   
 
 }
