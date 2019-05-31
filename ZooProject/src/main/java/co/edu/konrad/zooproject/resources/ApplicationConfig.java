@@ -21,15 +21,14 @@ public class ApplicationConfig extends Application{
     
     private void addRestResource(Set<Class<?>> resources){
         resources.add(co.edu.konrad.zooproject.resources.CuidadorResource.class);
-//        Resources.add(CuidadorResource.class);
-//        Resources.add(AlimentoResource.class);
-//        Resources.add(AnimalResource.class);
-//        Resources.add(EncargadoShowResource.class);
-//        Resources.add(EvaluacionAnimalResource.class);
-//        Resources.add(EvaluacionShowResource.class);
-//        Resources.add(ShowResource.class);
-//        Resources.add(TipoAnimalResource.class);
-//        Resources.add(UbicacionResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.AlimentoResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.AnimalResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.EncargadoShowResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.EvaluacionAnimalResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.EvaluacionShowResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.ShowResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.TipoAnimalResource.class);
+        resources.add(co.edu.konrad.zooproject.resources.UbicacionResource.class);
     }    
 }
 
