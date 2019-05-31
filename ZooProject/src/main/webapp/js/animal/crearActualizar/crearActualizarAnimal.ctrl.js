@@ -2,9 +2,9 @@ var animalModule = angular.module('animalModule');
 
 animalModule.controller('caAnimalCtrl', ['$scope', '$http', '$state', function($scope, $http, $state){
       var id = $state.params.id;
-      
+
       $scope.animal = {};
-      
+
       if(id){
         $http.get('api/animales/'+id).then(function(response){
             $scope.animal = response.data;
@@ -12,9 +12,9 @@ animalModule.controller('caAnimalCtrl', ['$scope', '$http', '$state', function($
             console.log(error);
         });
       }
-            
+
       $scope.guardarAnimal = function(){
-        if($scope.animal.nomCompleto && $scope.animal.numeroId && $scope.animal.tipoId && $scope.animal.fechaNacimiento && $scope.animal.celular ){
+        if($scope.animal.nombreAnimal && $scope.animal.nombreCientifico && $scope.animal.idTipoAnimal && $scope.animal.idCuidador && $scope.animal.especie && $scope.animal.descripcion ){
             $http.post('api/animales', JSON.stringify($scope.animal)).then(function(response){
                 $scope.animal = {};
                 //Redireccion a la lista
@@ -24,18 +24,16 @@ animalModule.controller('caAnimalCtrl', ['$scope', '$http', '$state', function($
             });
         }
       };
-      
+
       $scope.actualizarAnimal = function(){
-         if($scope.animal.nomCompleto && $scope.animal.numeroId && $scope.animal.tipoId && $scope.animal.fechaNacimiento && $scope.animal.celular ){
+         if($scope.animal.nombreAnimal && $scope.animal.nombreCientifico && $scope.animal.idTipoAnimal && $scope.animal.idCuidador && $scope.animal.especie && $scope.animal.descripcion  ){
              $http.put('api/animales/'+id, JSON.stringify($scope.animal)).then(function(response){
                  $scope.animal = {};
                  $state.go('animales');
              }, function(error){
-                console.log(error); 
+                console.log(error);
              });
-             
-         } 
+
+         }
       };
 }]);
-
-

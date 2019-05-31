@@ -1,38 +1,34 @@
-<html>
-    <head>
-        <title>Cuidadores
-        </title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilos.css">
+<div>
+    <div class="form-group">
+        <label class="control-label">Nombre del Animal</label>
+        <input class="form-control" ng-model="animal.nombreAnimal" id="nombre" type="text" placeholder="Nombre">
+    </div>
 
-    </head>
-    <body>
-        <!-- Creacion Navbar -->
+    <div class="form-group">
+        <label class="control-label">Nombre Cientifico</label>
+        <input class="form-control" ng-model="animal.nombreCientifico" id="CIENTIFICO" type="text" placeholder="CIENTIFICO">
+    </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">ZooProject</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="form-group">
+        <label class="control-label">Tipo Animal</label>
+        <input class="form-control" ng-model="animal.idTipoAnimal" id="tipoanimal" type="number" placeholder="tipo animal">
+    </div>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Animales <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+    <div class="form-group">
+        <label class="control-label">Id Cuidador</label>
+        <input class="form-control" ng-model="animal.idCuidador" id="cuidador" type="number" placeholder="Cuidador">
+    </div>
 
-        </nav>
+    <div class="form-group">
+        <label class="control-label">Especie</label>
+        <input class="form-control" ng-model="animal.especie" id="especie" type="text" placeholder="Especie">
+    </div>
 
+    <div class="form-group">
+        <label class="control-label">Descripcion</label>
+        <input class="form-control" ng-model="animal.descripcion" id="desc" type="text" placeholder="Descripcion>
+    </div>
 
-
-    </body>
-</html>
+    <button class="btn btn-default" ng-if="!animal.id" id="crearBoton" ng-click="guardarAnimal()">Crear Animal</button>
+    <button class="btn btn-default" ng-if="animal.id" id="crearBoton" ng-click="actualizarAnimal()">Actualizar Animal</button>
+</div>
