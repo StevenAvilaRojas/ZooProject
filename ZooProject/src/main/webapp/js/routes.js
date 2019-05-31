@@ -145,8 +145,8 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
-        
-                $stateProvider.state("animales", {
+
+        $stateProvider.state("animales", {
             url: '/animales',
             //Donde lo va a publicar
             views: {
@@ -161,7 +161,7 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
             url: '/crearAnimal',
             views: {
                 mainView: {
-                    templateUrl: './js/Animal/crearActualizar/crearActualizarAnimal.html',
+                    templateUrl: './js/animal/crearActualizar/crearActualizarAnimal.html',
                     controller: 'caAnimalCtrl'
                 }
             }
@@ -172,8 +172,43 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
             url: '/actualizarAnimal/:id',
             views: {
                 mainView: {
-                    templateUrl: './js/Animal/crearActualizar/crearActualizarAnimal.html',
+                    templateUrl: './js/animal/crearActualizar/crearActualizarAnimal.html',
                     controller: 'caAnimalCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+
+        $stateProvider.state("alimentos", {
+            url: '/alimentos',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/alimento/Listar/alimentos.html',
+                    controller: 'alimentoCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearAlimento", {
+            url: '/crearAlimento',
+            views: {
+                mainView: {
+                    templateUrl: './js/alimento/crearActualizar/crearActualizarAlimento.html',
+                    controller: 'caAlimentoCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarAlimento", {
+            url: '/actualizarAlimento/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/alimento/crearActualizar/crearActualizarAlimento.html',
+                    controller: 'caAlimentoCtrl',
                     params: {
                         id: null
                     }

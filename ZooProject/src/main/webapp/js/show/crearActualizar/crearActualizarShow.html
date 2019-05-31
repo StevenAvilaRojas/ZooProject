@@ -24,6 +24,6 @@
         <input class="form-control" ng-model="show.nombre" id="nombre" type="text" placeholder="nombre Show">
     </div>
     
-    <button class="btn btn-default" ng-if="!cuidador.id" id="crearBoton" ng-click="guardarCuidador()">Crear cuidador</button>
-    <button class="btn btn-default" ng-if="cuidador.id" id="crearBoton" ng-click="actualizarCuidador()">Actualizar cuidador</button>
+    <button class="btn btn-default" ng-if="!show.id" id="crearBoton" ng-click="guardarShow()">Crear Show</button>
+    <button class="btn btn-default" ng-if="show.id" id="crearBoton" ng-click="actualizarShow()">Actualizar Show</button>
 </div>
