@@ -61,9 +61,9 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
-        
 
-                $stateProvider.state("actualizarUbicacion", {
+
+        $stateProvider.state("actualizarUbicacion", {
             url: '/actualizarUbicacion/:id',
             views: {
                 mainView: {
@@ -75,7 +75,7 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
-        
+
         $stateProvider.state("shows", {
             url: '/shows',
             //Donde lo va a publicar
@@ -96,14 +96,84 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
-        
 
-                $stateProvider.state("actualizarShow", {
+
+        $stateProvider.state("actualizarShow", {
             url: '/actualizarShow/:id',
             views: {
                 mainView: {
                     templateUrl: './js/show/crearActualizar/crearActualizarShow.html',
                     controller: 'caShowCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+
+        $stateProvider.state("tipoAnimales", {
+            url: '/tipoAnimales',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/tipoAnimal/Listar/tipoAnimales.html',
+                    controller: 'tipoAnimalCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearTipoAnimal", {
+            url: '/crearTipoAnimal',
+            views: {
+                mainView: {
+                    templateUrl: './js/tipoAnimal/crearActualizar/crearActualizarTipoAnimal.html',
+                    controller: 'caTipoAnimalCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarTipoAnimal", {
+            url: '/actualizarTipoAnimal/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/tipoAnimal/crearActualizar/crearActualizarTipoAnimal.html',
+                    controller: 'caTipoAnimalCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+        
+                $stateProvider.state("animales", {
+            url: '/animales',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/animal/Listar/animales.html',
+                    controller: 'animalCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearAnimal", {
+            url: '/crearAnimal',
+            views: {
+                mainView: {
+                    templateUrl: './js/Animal/crearActualizar/crearActualizarAnimal.html',
+                    controller: 'caAnimalCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarAnimal", {
+            url: '/actualizarAnimal/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/Animal/crearActualizar/crearActualizarAnimal.html',
+                    controller: 'caAnimalCtrl',
                     params: {
                         id: null
                     }

@@ -1,29 +1,14 @@
 <div>    
     <div class="form-group">
-        <label class="control-label">Nombre del Cuidador</label>
-        <input class="form-control" ng-model="cuidador.nomCompleto" id="nombre" type="text" placeholder="Nombre">
+        <label class="control-label">ID Tipo Animal</label>
+        <input class="form-control" ng-model="tipoAnimal.idTipoAnimal" id="idTipoAnimal" type="number" placeholder="ID Tipo Animal">
     </div>
 
     <div class="form-group">
-        <label class="control-label">Tipo ID</label>
-        <input class="form-control" ng-model="cuidador.tipoId" id="tipoId" type="text" placeholder="Tipo ID">
-    </div>
-
-    <div class="form-group">
-        <label class="control-label">Numero ID</label>
-        <input class="form-control" ng-model="cuidador.numeroId" id="numeroId" type="number" placeholder="Numero ID">
-    </div>
-
-    <div class="form-group">
-        <label class="control-label">Celular</label>
-        <input class="form-control" ng-model="cuidador.celular" id="celular" type="number" placeholder="Celular">
+        <label class="control-label">Nombre Tipo Animal</label>
+        <input class="form-control" ng-model="tipoAnimal.nombreAnimal" id="nombreTipoAnimal" type="text" placeholder="Nombre Tipo Animal">
     </div>
     
-    <div class="form-group">
-        <label class="control-label">Fecha de Nacimiento</label>
-        <input class="form-control" ng-model="cuidador.fechaNacimiento" id="fechaNacimiento" type="DATE" placeholder="Fecha de Nacimiento">
-    </div>
-    
-    <button class="btn btn-default" ng-if="!cuidador.id" id="crearBoton" ng-click="guardarCuidador()">Crear cuidador</button>
-    <button class="btn btn-default" ng-if="cuidador.id" id="crearBoton" ng-click="actualizarCuidador()">Actualizar cuidador</button>
+    <button class="btn btn-default" ng-if="!tipoAnimal.id" id="crearBoton" ng-click="guardarTipoAnimal()">Crear Tipo Animal</button>
+    <button class="btn btn-default" ng-if="tipoAnimal.id" id="crearBoton" ng-click="actualizarTipoAnimal()">Actualizar Animal</button>
 </div>

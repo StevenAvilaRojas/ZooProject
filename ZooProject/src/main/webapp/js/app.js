@@ -5,5 +5,6 @@ var app = angular.module("ZooProject", [
    'cuidadorModule',
    'ubicacionModule',
    'showModule',
-   'tipoAnimalModule'
+   'tipoAnimalModule',
+   'animalModule'
 ]);
