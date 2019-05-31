@@ -5,7 +5,15 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
         //Direccionamiento cuando no encuentra ruta
         $urlRouterProvider.otherwise('/');
 
-
+        $stateProvider.state("home", {
+            url: '/home',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: '.index.html'
+                }
+            }
+        });
 
         $stateProvider.state("cuidadores", {
             url: '/cuidadores',
