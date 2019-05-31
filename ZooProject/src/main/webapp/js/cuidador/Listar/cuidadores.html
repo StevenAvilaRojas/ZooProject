@@ -2,6 +2,7 @@
     <!--striped coloca color intercalado en las tablas --> 
     <table class="table table-striped"> 
         <thead> 
+        <th></th>
         <th>Nombre</th> 
         <th>Tipo ID</th> 
         <th>Numero ID</th> 
@@ -11,6 +12,7 @@
         
         <tbody> 
             <tr ng-repeat="cuidador in cuidadores"> 
+                <td>{{cuidador.numeroId}}</td>
                 <td>{{cuidador.nomCompleto}}</td> 
                 <td>{{cuidador.tipoId}}</td> 
                 <td>{{cuidador.numeroId}}</td> 
