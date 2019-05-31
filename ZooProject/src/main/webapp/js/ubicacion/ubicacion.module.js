@@ -1,0 +1,1 @@
+var ubicacionModule = angular.module("ubicacionModule", []);
