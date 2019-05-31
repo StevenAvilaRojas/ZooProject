@@ -5,6 +5,17 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
         //Direccionamiento cuando no encuentra ruta
         $urlRouterProvider.otherwise('/');
 
+        $stateProvider.state("tipoAnimales", {
+            url: '/tipoAnimales',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/tipoAnimal/Listar/tipoAnimales.html',
+                    controller: 'tipoAnimalCtrl'
+                }
+            }
+        });
+
         $stateProvider.state("cuidadores", {
             url: '/cuidadores',
             //Donde lo va a publicar

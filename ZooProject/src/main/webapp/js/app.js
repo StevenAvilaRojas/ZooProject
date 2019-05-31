@@ -3,4 +3,5 @@ var app = angular.module("ZooProject", [
    'ngRoute',
    'ui.router',
    'cuidadorModule'
+   'tipoAnimalModule'
 ]);
