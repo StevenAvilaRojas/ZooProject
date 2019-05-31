@@ -1,0 +1,26 @@
+<div id="tableFestivales">
+    <!--striped coloca color intercalado en las tablas -->
+    <table class="table table-striped">
+        <thead>
+        <th>Tipo ID</th>
+        <th>Numero ID</th>
+        <th>Fecha Nacimiento</th>
+        <th>Celular</th>
+        <th>Nombre</th>
+
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="encargadoShow in encargadoShows">
+                <td>{{encargadoShow.tipoId}}</td>
+                <td>{{encargadoShow.numeroId}}</td>
+                <td>{{encargadoShow.fechaNacimiento}}</td>
+                <td>{{encargadoShow.celular}}</td>
+                <td>{{encargadoShow.nombre}}</td>
+                <td> <button class="btn btn-primary" ui-sref="actualizarEncargadoShow({id:encargadoShow.id})">Editar</button>
+                    <button class="btn btn-danger" ng-click="eliminar(encargadoShow.id)">Eliminar</button> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

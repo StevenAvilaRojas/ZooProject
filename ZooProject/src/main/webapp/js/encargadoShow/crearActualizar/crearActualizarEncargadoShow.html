@@ -1,0 +1,66 @@
+<div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#!/home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearCuidador">Cuidadores <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearUbicacion">Crear Ubicacion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearShow">Crear Show</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAnimal">Crear Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearTipoAnimal">Crear Tipo Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAnimal">Crear Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAlimento">Crear Alimento</a>
+                    </li>
+                </ul>
+            </div>
+
+<div>
+    <div class="form-group">
+        <label class="control-label">Tipo Id</label>
+        <input class="form-control" ng-model="encargadoShow.tipoId" id="id" type="number" placeholder="Tipo Id">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Numero Id</label>
+        <input class="form-control" ng-model="encargadoShow.tipoId" id="numero" type="number" placeholder="Numero ID">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Fecha de Nacimiento</label>
+        <input class="form-control" ng-model="encargadoShow.fechaNacimiento" id="fechaNacimiento" type="DATE" placeholder="Fecha de Nacimiento">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Celular</label>
+        <input class="form-control" ng-model="encargadoShow.celular" id="celular" type="number" placeholder="Celular">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Nombre</label>
+        <input class="form-control" ng-model="encargadoShow.nombre" id="nombre" type="text" placeholder="Nombre">
+    </div>
+
+    <button class="btn btn-default" ng-if="!encargadoShow.id" id="crearBoton" ng-click="guardarEncargadoShow()">Crear Encargado Show</button>
+    <button class="btn btn-default" ng-if="encargadoShow.id" id="crearBoton" ng-click="actualizarEncargadoShow()">Actualizar Encargado Show</button>
+</div>

@@ -1,0 +1,61 @@
+<div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#!/home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearCuidador">Cuidadores <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearUbicacion">Crear Ubicacion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearShow">Crear Show</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAnimal">Crear Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearTipoAnimal">Crear Tipo Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAnimal">Crear Animal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/crearAlimento">Crear Alimento</a>
+                    </li>
+                </ul>
+            </div>
+
+<div>
+    <div class="form-group">
+        <label class="control-label">Id Animal</label>
+        <input class="form-control" ng-model="evaluacionAnimal.idAnimal" id="idAnimal" type="number" placeholder="Id Animal">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Observacion</label>
+        <input class="form-control" ng-model="evaluacionAnimal.observacion" id="observacion" type="text" placeholder="Observacion">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Calificacion</label>
+        <input class="form-control" ng-model="evaluacionAnimal.calificacion" id="calificacion" type="number" placeholder="Calificacion">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Fecha de Calificacion</label>
+        <input class="form-control" ng-model="evaluacionAnimal.fechaEvaluacionAnimal" id="fechaEvaluacion" type="DATE" placeholder="Fecha de Evaluacion">
+    </div>
+
+    <button class="btn btn-default" ng-if="!evaluacionAnimal.id" id="crearBoton" ng-click="guardarEvaluacionAnimal()">Crear Evaluacion Animal</button>
+    <button class="btn btn-default" ng-if="evaluacionAnimal.id" id="crearBoton" ng-click="actualizarEvaluacionAnimal()">Actualizar Evaluacion Animal</button>
+</div>
