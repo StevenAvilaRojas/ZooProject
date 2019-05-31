@@ -1,28 +1,27 @@
-<div>
+<div>    
+    <div class="form-group">
+        <label class="control-label">ID Ubicacion</label>
+        <input class="form-control" ng-model="show.idUbbicacion" id="idUbicacion" type="number" placeholder="ID Ubicacion">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Hora Inicio</label>
+        <input class="form-control" ng-model="show.horaInicio" id="horaInicio" type="date" placeholder="Hora Inicio">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Hora Fin</label>
+        <input class="form-control" ng-model="show.horaFin" id="horaFin" type="date" placeholder="Hora Fin">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Animales</label>
+        <input class="form-control" ng-model="show.animales" id="animales" type="text" placeholder="Animales">
+    </div>
     
     <div class="form-group">
-        <label class="control-label">Nombre del Cuidador</label>
-        <input class="form-control" ng-model="cuidador.nomCompleto" id="nombre" type="text" placeholder="Nombre">
-    </div>
-
-    <div class="form-group">
-        <label class="control-label">Tipo ID</label>
-        <input class="form-control" ng-model="cuidador.tipoId" id="tipoId" type="text" placeholder="Tipo ID">
-    </div>
-
-    <div class="form-group">
-        <label class="control-label">Numero ID</label>
-        <input class="form-control" ng-model="cuidador.numeroId" id="numeroId" type="number" placeholder="Numero ID">
-    </div>
-
-    <div class="form-group">
-        <label class="control-label">Celular</label>
-        <input class="form-control" ng-model="cuidador.celular" id="celular" type="number" placeholder="Celular">
-    </div>
-    
-    <div class="form-group">
-        <label class="control-label">Fecha de Nacimiento</label>
-        <input class="form-control" ng-model="cuidador.fechaNacimiento" id="fechaNacimiento" type="DATE" placeholder="Fecha de Nacimiento">
+        <label class="control-label">Nombre Show</label>
+        <input class="form-control" ng-model="show.nombre" id="nombre" type="text" placeholder="nombre Show">
     </div>
     
     <button class="btn btn-default" ng-if="!cuidador.id" id="crearBoton" ng-click="guardarCuidador()">Crear cuidador</button>

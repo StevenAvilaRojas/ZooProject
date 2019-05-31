@@ -25,7 +25,7 @@ ubicacionModule.controller('caUbicacionCtrl', ['$scope', '$http', '$state', func
         }
       };
       
-      $scope.actualizarCuidador = function(){
+      $scope.actualizarUbicacion = function(){
          if($scope.ubicacion.id_ubicacion  && $scope.ubicacion.ocupado ){
              $http.put('api/ubicaciones/'+id, JSON.stringify($scope.ubicacion)).then(function(response){
                  $scope.ubicacion = {};

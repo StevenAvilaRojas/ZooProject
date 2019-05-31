@@ -4,15 +4,15 @@
         </title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no,
-        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+              initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/flexslider.css">
-	      <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
 
         <script src="js/jsPagina/jquery-3.1.0.min.js"></script>
-   	       <script src="js/jsPagina/jquery.flexslider.js"></script>
-   	       <script src="js/jsPagina/main.js"></script>
+        <script src="js/jsPagina/jquery.flexslider.js"></script>
+        <script src="js/jsPagina/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js" type="text/javascript"></script>
@@ -40,6 +40,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#!/crearUbicacion">Crear Ubicacion</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#!/crearShow">Crear Show</a>
                     </li>
                 </ul>
@@ -49,40 +53,40 @@
 
         <!-- Creacion Slider -->
         <div class="flexslider">
-          <ul class="slides">
+            <ul class="slides">
 
-      			<li>
-      				<img src="Images/1.jpg" alt="">
-      				<section class="caption">
-      					</section>
-      			</li>
+                <li>
+                    <img src="Images/1.jpg" alt="">
+                    <section class="caption">
+                    </section>
+                </li>
 
-      			<li>
-      				<img src="Images/2.jpg" alt="">
-      				<section class="caption">
-      				</section>
-      			</li>
+                <li>
+                    <img src="Images/2.jpg" alt="">
+                    <section class="caption">
+                    </section>
+                </li>
 
-      			<li>
-      				<img src="Images/3.jpg" alt="">
-      				<section class="caption">
-      					</section>
-      			</li>
+                <li>
+                    <img src="Images/3.jpg" alt="">
+                    <section class="caption">
+                    </section>
+                </li>
 
-          	<li>
-      				<img src="Images/5.jpg" alt="">
-      				<section class="caption">
-      					</section>
-      			</li>
+                <li>
+                    <img src="Images/5.jpg" alt="">
+                    <section class="caption">
+                    </section>
+                </li>
 
-                  	<li>
-      				<img src="Images/6.jpg" alt="">
-      				<section class="caption">
-      					</section>
-      			</li>
+                <li>
+                    <img src="Images/6.jpg" alt="">
+                    <section class="caption">
+                    </section>
+                </li>
 
-      		</ul>
-    	</div>
+            </ul>
+        </div>
 
 
         <div ui-view = "mainView"> </div>
@@ -93,6 +97,14 @@
         <script src="./js/cuidador/cuidador.module.js"></script>
         <script src="./js/cuidador/Listar/cuidador.ctrl.js"></script>
         <script src="./js/cuidador/crearActualizar/crearActualizarCuidador.ctrl.js"></script>
+
+        <script src="./js/ubicacion/ubicacion.module.js"></script>
+        <script src="./js/ubicacion/Listar/ubicacion.ctrl.js"></script>
+        <script src="./js/ubicacion/crearActualizar/crearActualizarUbicacion.ctrl.js"></script>
+
+        <script src="./js/show/show.module.js"></script>
+        <script src="./js/show/Listar/show.ctrl.js"></script>
+        <script src="./js/show/crearActualizar/crearActualizarShow.ctrl.js"></script>
 
         <script src="./js/tipoAnimal/tipoAnimal.module.js"></script>
         <script src="./js/tipoAnimal/Listar/tipoAnimal.ctrl.js"></script>

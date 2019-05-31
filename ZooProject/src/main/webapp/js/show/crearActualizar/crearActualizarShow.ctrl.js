@@ -14,7 +14,7 @@ showModule.controller('caShowCtrl', ['$scope', '$http', '$state', function($scop
       }
             
       $scope.guardarShow = function(){
-        if($scope.show.nomCompleto && $scope.show.numeroId && $scope.show.tipoId && $scope.show.fechaNacimiento && $scope.show.celular ){
+        if($scope.show.idUbicacion && $scope.show.horaInicio && $scope.show.horaFin && $scope.show.animales && $scope.show.nombre){
             $http.post('api/shows', JSON.stringify($scope.show)).then(function(response){
                 $scope.show = {};
                 //Redireccion a la lista
@@ -26,7 +26,7 @@ showModule.controller('caShowCtrl', ['$scope', '$http', '$state', function($scop
       };
       
       $scope.actualizarShow = function(){
-         if($scope.show.nomCompleto && $scope.show.numeroId && $scope.show.tipoId && $scope.show.fechaNacimiento && $scope.show.celular ){
+         if($scope.show.idUbicacion && $scope.show.horaInicio && $scope.show.horaFin && $scope.show.animales && $scope.show.nombre){
              $http.put('api/shows/'+id, JSON.stringify($scope.show)).then(function(response){
                  $scope.show = {};
                  $state.go('shows');

@@ -40,4 +40,74 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
+
+        $stateProvider.state("ubicaciones", {
+            url: '/ubicaciones',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/ubicacion/Listar/ubicaciones.html',
+                    controller: 'ubicacionCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearUbicacion", {
+            url: '/crearUbicacion',
+            views: {
+                mainView: {
+                    templateUrl: './js/ubicacion/crearActualizar/crearActualizarUbicacion.html',
+                    controller: 'caUbicacionCtrl'
+                }
+            }
+        });
+        
+
+                $stateProvider.state("actualizarUbicacion", {
+            url: '/actualizarUbicacion/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/ubicacion/crearActualizar/crearActualizarUbicacion.html',
+                    controller: 'caUbicacionCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+        
+        $stateProvider.state("shows", {
+            url: '/shows',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/show/Listar/shows.html',
+                    controller: 'showCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearShow", {
+            url: '/crearShow',
+            views: {
+                mainView: {
+                    templateUrl: './js/show/crearActualizar/crearActualizarShow.html',
+                    controller: 'caShowCtrl'
+                }
+            }
+        });
+        
+
+                $stateProvider.state("actualizarShow", {
+            url: '/actualizarShow/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/show/crearActualizar/crearActualizarShow.html',
+                    controller: 'caShowCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
     }]);
