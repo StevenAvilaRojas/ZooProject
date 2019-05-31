@@ -1,0 +1,19 @@
+<div>
+    <div class="form-group">
+        <label class="control-label">Tipo de Animal</label>
+        <input class="form-control" ng-model="alimento.tipoAnimal" id="tipoAnimal" type="text" placeholder="Tipo Animal">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Tipo Alimento</label>
+        <input class="form-control" ng-model="alimento.tipoAlimento" id="tipoAlimento" type="text" placeholder="Tipo ALIMENTO">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Hora de Alimento</label>
+        <input class="form-control" ng-model="alimento.horaAlimento" id="HORAa" type="date" placeholder="Hora Alimento">
+    </div>
+    
+    <button class="btn btn-default" ng-if="!alimento.id" id="crearBoton" ng-click="guardarAlimento()">Crear Alimento</button>
+    <button class="btn btn-default" ng-if="alimento.id" id="crearBoton" ng-click="actualizarAlimento()">Actualizar Alimento</button>
+</div>
