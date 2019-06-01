@@ -223,4 +223,109 @@ app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $u
                 }
             }
         });
+
+        $stateProvider.state("evaluacionShows", {
+            url: '/evaluacionShows',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionShow/Listar/evaluacionShows.html',
+                    controller: 'evaluacionShowCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearEvaluacionShow", {
+            url: '/crearEvaluacionShow',
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionShow/crearActualizar/crearActualizarEvaluacionShow.html',
+                    controller: 'caEvaluacionShowCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarEvaluacionShow", {
+            url: '/actualizarEvaluacionShow/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionShow/crearActualizar/crearActualizarEvaluacionShow.html',
+                    controller: 'caEvaluacionShowCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+
+        $stateProvider.state("evaluacionAnimales", {
+            url: '/evaluacionAnimales',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionAnimal/Listar/evaluacionAnimales.html',
+                    controller: 'evaluacionAnimalCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearEvaluacionAnimal", {
+            url: '/crearEvaluacionAnimal',
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionAnimal/crearActualizar/crearActualizarEvaluacionAnimal.html',
+                    controller: 'caEvaluacionAnimalCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarEvaluacionAnimal", {
+            url: '/actualizarEvaluacionAnimal/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/evaluacionAnimal/crearActualizar/crearActualizarEvaluacionAnimal.html',
+                    controller: 'caEvaluacionAnimalCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
+
+        $stateProvider.state("encargadoShows", {
+            url: '/encargadoShows',
+            //Donde lo va a publicar
+            views: {
+                mainView: {
+                    templateUrl: './js/encargadoShow/Listar/encargadoShows.html',
+                    controller: 'encargadoShowCtrl'
+                }
+            }
+        });
+
+        $stateProvider.state("crearEncargadoShow", {
+            url: '/crearEncargadoShow',
+            views: {
+                mainView: {
+                    templateUrl: './js/encargadoShow/crearActualizar/crearActualizarEncargadoShow.html',
+                    controller: 'caEncargadoShowCtrl'
+                }
+            }
+        });
+
+
+        $stateProvider.state("actualizarEncargadoShow", {
+            url: '/actualizarEncargadoShow/:id',
+            views: {
+                mainView: {
+                    templateUrl: './js/encargadoShow/crearActualizar/crearActualizarEncargadoShow.html',
+                    controller: 'caEncargadoShowCtrl',
+                    params: {
+                        id: null
+                    }
+                }
+            }
+        });
     }]);
