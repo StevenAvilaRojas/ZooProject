@@ -14,7 +14,7 @@ ubicacionModule.controller('caUbicacionCtrl', ['$scope', '$http', '$state', func
       }
             
       $scope.guardarUbicacion = function(){
-        if($scope.ubicacion.id_ubicacion && $scope.ubicacion.ocupado ){
+        if($scope.ubicacion.idUbicacion && $scope.ubicacion.ocupado ){
             $http.post('api/ubicaciones', JSON.stringify($scope.ubicacion)).then(function(response){
                 $scope.ubicacion = {};
                 //Redireccion a la lista
@@ -26,7 +26,7 @@ ubicacionModule.controller('caUbicacionCtrl', ['$scope', '$http', '$state', func
       };
       
       $scope.actualizarUbicacion = function(){
-         if($scope.ubicacion.id_ubicacion  && $scope.ubicacion.ocupado ){
+         if($scope.ubicacion.idUbicacion  && $scope.ubicacion.ocupado ){
              $http.put('api/ubicaciones/'+id, JSON.stringify($scope.ubicacion)).then(function(response){
                  $scope.ubicacion = {};
                  $state.go('ubicaciones');

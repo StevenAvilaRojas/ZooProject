@@ -10,8 +10,8 @@
             <tr ng-repeat="ubicacion in ubicaciones">
                 <td>{{ubicacion.id_ubicacion}}</td>
                 <td>{{ubicacion.ocupado}}</td>
-                <td> <button class="btn btn-primary" ui-sref="actualizarUbicacion({id_ubicacion:ubicacion.id_ubicacion})">Editar</button>
-                    <button class="btn btn-danger" ng-click="eliminar(ubicacion.id_ubicacion)">Eliminar</button>
+                <td> <button class="btn btn-primary" ui-sref="actualizarUbicacion({id_ubicacion:ubicacion.idUbicacion})">Editar</button>
+                    <button class="btn btn-danger" ng-click="eliminar(ubicacion.idUbicacion)">Eliminar</button>
                 </td>
             </tr>
         </tbody>

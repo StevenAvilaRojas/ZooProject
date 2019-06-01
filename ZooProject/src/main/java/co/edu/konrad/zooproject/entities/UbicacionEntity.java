@@ -23,7 +23,7 @@ public class UbicacionEntity implements Serializable{
     //Llave Primaria
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
-   private Long id_ubicacion;
+   private Long idUbicacion;
 
 
    //Ocupado
@@ -37,12 +37,12 @@ public class UbicacionEntity implements Serializable{
 
     //Getter And Setter
 
-    public Long getId_ubicacion() {
-        return id_ubicacion;
+    public Long getIdUbicacion() {
+        return idUbicacion;
     }
 
-    public void setId_ubicacion(Long id_ubicacion) {
-        this.id_ubicacion = id_ubicacion;
+    public void setId_ubicacion(Long idUbicacion) {
+        this.idUbicacion = idUbicacion;
     }
 
     public boolean isOcupado() {

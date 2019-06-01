@@ -9,6 +9,6 @@
         <input class="form-control" ng-model="ubicacion.ocupado" id="estado" type="text" placeholder="Estado">
     </div>
     
-    <button class="btn btn-default" ng-if="!ubicacion.id" id="crearBoton" ng-click="guardarUbicacion()">Crear Ubicacion</button>
-    <button class="btn btn-default" ng-if="ubicacion.id" id="crearBoton" ng-click="actualizarUbicacion()">Actualizar Ubicacion</button>
+    <button class="btn btn-default" ng-if="!ubicacion.idUbicacion" id="crearBoton" ng-click="guardarUbicacion()">Crear Ubicacion</button>
+    <button class="btn btn-default" ng-if="ubicacion.idUbicacion" id="crearBoton" ng-click="actualizarUbicacion()">Actualizar Ubicacion</button>
 </div>

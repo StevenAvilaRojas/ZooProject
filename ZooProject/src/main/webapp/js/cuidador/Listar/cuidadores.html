@@ -1,6 +1,5 @@
-<div id="tableFestivales"> 
-    <!--striped coloca color intercalado en las tablas --> 
-    <table class="table table-striped"> 
+<div> 
+    <table class="table table-hover"> 
         <thead> 
         <th>Nombre</th> 
         <th>Tipo ID</th> 
@@ -16,8 +15,8 @@
                 <td>{{cuidador.numeroId}}</td> 
                 <td>{{cuidador.celular}}</td> 
                 <td>{{cuidador.fechaNacimiento}}</td> 
-                <td> <button class="btn btn-primary" ui-sref="actualizarCuidador({id:cuidador.id})">Editar</button> 
-                    <button class="btn btn-danger" ng-click="eliminar(cuidador.id)">Eliminar</button> 
+                <td> <button class="btn btn-primary" ui-sref="actualizarCuidador({id:cuidador.idCuidador})">Editar</button> 
+                    <button class="btn btn-danger" ng-click="eliminar(cuidador.idCuidador)">Eliminar</button> 
                 </td> 
             </tr> 
         </tbody> 
